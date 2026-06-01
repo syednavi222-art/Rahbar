@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAHBAR رہبر — Premium Pakistani Fashion</title>
+<meta name="description" content="RAHBAR — Pakistan's premium fashion brand. Shop T-shirts, hoodies, jackets, tracksuits & more. Nationwide delivery. COD available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--black:#0a0a0a;--white:#ffffff;--gray-50:#f8f7f5;--gray-100:#f0ede8;--gray-200:#e0dcd5;--gray-300:#c5bfb6;--gray-500:#8a8278;--gray-700:#4a4540;--gray-900:#1a1815;
+--gold:#c9a84c;--gold-light:#e8d5a0;--red:#c0392b;
+--font-sans:'Inter',sans-serif;--font-serif:'Playfair Display',serif;
+--radius:8px;--radius-lg:14px;--radius-xl:20px;
+--shadow:0 2px 16px rgba(0,0,0,0.08);--shadow-lg:0 8px 40px rgba(0,0,0,0.14);
+--transition:0.22s ease;
+}
+body{font-family:var(--font-sans);background:#fff;color:var(--black);min-height:100vh;overflow-x:hidden}
+body.dark{background:var(--gray-900);color:#f0ede8}
+body.dark .navbar,.dark .nav-bottom{background:var(--gray-900);border-color:#2a2723}
+body.dark .product-card{background:var(--gray-900);border-color:#2a2723}
+body.dark .filter-panel,.dark .sidebar{background:var(--gray-900);border-color:#2a2723}
+body.dark .cart-drawer,.dark .modal-bg{background:rgba(0,0,0,0.8)}
+body.dark .cart-content,.dark .modal-box{background:var(--gray-900);border-color:#2a2723}
+body.dark input,.dark select,.dark textarea{background:#222;color:#f0ede8;border-color:#444}
+body.dark .page-section{background:var(--gray-900)}
+body.dark .section-alt{background:#111}
+body.dark .footer{background:#050505}
+body.dark .hero-content h1{color:#fff}
+body.dark .tag,.dark .badge{background:#2a2723}
+a{color:inherit;text-decoration:none}button{cursor:pointer;font-family:var(--font-sans)}
+img{display:block;max-width:100%}
+
+/* NAVBAR */
+.navbar{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--gray-200);padding:0 1.5rem}
+.nav-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
+.nav-logo{font-family:var(--font-serif);font-size:1.7rem;font-weight:700;letter-spacing:0.04em;color:var(--black)}
+.nav-logo span{font-size:0.85rem;display:block;font-family:var(--font-sans);font-weight:400;letter-spacing:0.08em;color:var(--gray-500);margin-top:-4px}
+.nav-links{display:flex;align-items:center;gap:1.8rem}
+.nav-links a{font-size:0.875rem;font-weight:500;letter-spacing:0.04em;color:var(--gray-700);transition:color var(--transition)}
+.nav-links a:hover,.nav-links a.active{color:var(--black)}
+.nav-actions{display:flex;align-items:center;gap:0.5rem}
+.nav-btn{background:none;border:none;padding:0.5rem;border-radius:var(--radius);color:var(--gray-700);font-size:1.1rem;transition:all var(--transition);position:relative}
+.nav-btn:hover{background:var(--gray-100);color:var(--black)}
+.cart-badge{position:absolute;top:2px;right:2px;background:var(--black);color:#fff;font-size:9px;font-weight:700;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.search-bar{display:flex;align-items:center;background:var(--gray-100);border-radius:40px;padding:0.4rem 1rem;gap:0.5rem;transition:all var(--transition);flex:1;max-width:320px}
+.search-bar input{background:none;border:none;outline:none;font-size:0.85rem;color:var(--black);width:100%}
+.search-bar input::placeholder{color:var(--gray-500)}
+.nav-mobile-toggle{display:none;background:none;border:none;font-size:1.3rem;color:var(--gray-700)}
+
+/* ANNOUNCEMENT BAR */
+.announcement{background:var(--black);color:#fff;text-align:center;padding:0.6rem 1rem;font-size:0.78rem;letter-spacing:0.06em;font-weight:500}
+.announcement strong{color:var(--gold)}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;height:85vh;min-height:560px;display:flex;align-items:center;background:#0a0a0a}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0d0d0d 0%,#1a1612 40%,#231f1a 100%);z-index:0}
+.hero-pattern{position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px;z-index:1}
+.hero-content{position:relative;z-index:2;max-width:1400px;margin:0 auto;padding:0 2rem;width:100%}
+.hero-eyebrow{font-size:0.75rem;letter-spacing:0.2em;color:var(--gold);font-weight:600;margin-bottom:1rem;text-transform:uppercase}
+.hero-content h1{font-family:var(--font-serif);font-size:clamp(2.8rem,7vw,5.5rem);font-weight:700;color:#fff;line-height:1.05;margin-bottom:1.5rem}
+.hero-content h1 em{color:var(--gold);font-style:normal}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,0.65);max-width:440px;line-height:1.7;margin-bottom:2.5rem}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{background:var(--gold);color:var(--black);border:none;padding:0.85rem 2rem;border-radius:40px;font-size:0.875rem;font-weight:600;letter-spacing:0.06em;transition:all var(--transition);text-transform:uppercase}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-1px)}
+.btn-outline-white{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.4);padding:0.85rem 2rem;border-radius:40px;font-size:0.875rem;font-weight:500;letter-spacing:0.06em;transition:all var(--transition)}
+.btn-outline-white:hover{border-color:#fff;background:rgba(255,255,255,0.08)}
+.hero-stats{display:flex;gap:2.5rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1)}
+.hero-stat-num{font-size:1.5rem;font-weight:700;color:#fff}
+.hero-stat-label{font-size:0.72rem;color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase;margin-top:2px}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.4rem;color:rgba(255,255,255,0.4);font-size:0.7rem;letter-spacing:0.1em;z-index:3;cursor:pointer}
+.scroll-line{width:1px;height:40px;background:linear-gradient(180deg,rgba(255,255,255,0.3),transparent)}
+
+/* SECTIONS */
+.page-section{padding:5rem 1.5rem;max-width:1400px;margin:0 auto}
+.section-alt{background:var(--gray-50);padding:5rem 1.5rem}
+.section-alt-inner{max-width:1400px;margin:0 auto}
+.section-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2.5rem}
+.section-label{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:0.5rem}
+.section-title{font-family:var(--font-serif);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;line-height:1.2}
+.view-all-link{font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--black);display:flex;align-items:center;gap:0.4rem;white-space:nowrap;padding-bottom:4px;border-bottom:1.5px solid var(--black);transition:all var(--transition)}
+.view-all-link:hover{gap:0.7rem}
+
+/* CATEGORIES */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.cat-card{position:relative;border-radius:var(--radius-lg);overflow:hidden;cursor:pointer;aspect-ratio:3/4;background:var(--gray-100);transition:transform var(--transition)}
+.cat-card:hover{transform:scale(1.02)}
+.cat-card:first-child{grid-column:span 2;aspect-ratio:auto}
+.cat-img{width:100%;height:100%;object-fit:cover}
+.cat-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem}
+.cat-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,0.7) 0%,transparent 50%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem}
+.cat-name{color:#fff;font-family:var(--font-serif);font-size:1.3rem;font-weight:600;line-height:1.1}
+.cat-count{color:rgba(255,255,255,0.65);font-size:0.75rem;margin-top:0.3rem}
+
+/* PRODUCTS */
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5rem}
+.product-card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;transition:all var(--transition);cursor:pointer;position:relative}
+.product-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.product-img-wrap{position:relative;aspect-ratio:3/4;background:var(--gray-100);overflow:hidden}
+.product-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:4rem;transition:transform var(--transition)}
+.product-card:hover .product-img-placeholder{transform:scale(1.05)}
+.product-badge{position:absolute;top:0.75rem;left:0.75rem;padding:0.3rem 0.7rem;border-radius:20px;font-size:0.68rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase}
+.badge-new{background:var(--black);color:#fff}
+.badge-sale{background:var(--red);color:#fff}
+.badge-hot{background:var(--gold);color:var(--black)}
+.product-wishlist{position:absolute;top:0.75rem;right:0.75rem;background:#fff;border:none;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--gray-500);transition:all var(--transition);opacity:0}
+.product-card:hover .product-wishlist{opacity:1}
+.product-wishlist:hover,.product-wishlist.active{color:var(--red)}
+.product-info{padding:1rem 1.1rem 1.1rem}
+.product-cat{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-500);margin-bottom:0.3rem}
+.product-name{font-size:0.95rem;font-weight:500;line-height:1.3;margin-bottom:0.6rem}
+.product-colors{display:flex;gap:4px;margin-bottom:0.7rem}
+.color-dot{width:14px;height:14px;border-radius:50%;border:2px solid #fff;outline:1.5px solid var(--gray-200)}
+.product-price{display:flex;align-items:center;gap:0.5rem}
+.price-current{font-size:1.05rem;font-weight:600}
+.price-original{font-size:0.85rem;color:var(--gray-500);text-decoration:line-through}
+.price-discount{font-size:0.75rem;color:var(--red);font-weight:600}
+.product-stars{display:flex;align-items:center;gap:3px;margin-top:0.4rem}
+.star{color:var(--gold);font-size:0.75rem}
+.star-count{font-size:0.7rem;color:var(--gray-500);margin-left:2px}
+.quick-add{width:100%;background:var(--black);color:#fff;border:none;padding:0.75rem;font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;transition:all var(--transition);opacity:0;transform:translateY(4px)}
+.product-card:hover .quick-add{opacity:1;transform:none}
+.quick-add:hover{background:var(--gray-700)}
+
+/* OFFER BANNER */
+.offer-banner{background:var(--black);color:#fff;padding:4rem 2rem;text-align:center;position:relative;overflow:hidden}
+.offer-banner-inner{max-width:700px;margin:0 auto;position:relative;z-index:1}
+.offer-pattern{position:absolute;inset:0;opacity:0.06;background-image:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:30px 30px}
+.offer-eyebrow{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:0.75rem}
+.offer-title{font-family:var(--font-serif);font-size:clamp(1.8rem,4vw,3rem);font-weight:700;line-height:1.1;margin-bottom:1rem}
+.offer-title strong{color:var(--gold)}
+.offer-sub{color:rgba(255,255,255,0.65);font-size:0.95rem;margin-bottom:1.5rem}
+.countdown{display:flex;gap:1rem;justify-content:center;margin:1.5rem 0}
+.countdown-box{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius);padding:0.75rem 1rem;min-width:70px;text-align:center}
+.countdown-num{font-size:1.8rem;font-weight:700;line-height:1}
+.countdown-label{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:3px}
+.coupon-code{display:inline-flex;align-items:center;gap:0.75rem;background:rgba(201,168,76,0.15);border:1.5px dashed var(--gold);border-radius:var(--radius);padding:0.6rem 1.2rem;font-size:0.85rem;color:var(--gold);font-weight:700;letter-spacing:0.12em;margin:1rem 0;cursor:pointer}
+.coupon-code:hover{background:rgba(201,168,76,0.25)}
+
+/* TESTIMONIALS */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.testi-card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.5rem;transition:transform var(--transition)}
+.testi-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.testi-stars{color:var(--gold);font-size:0.9rem;margin-bottom:0.75rem;letter-spacing:2px}
+.testi-text{font-size:0.9rem;line-height:1.7;color:var(--gray-700);margin-bottom:1.25rem;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:0.75rem}
+.testi-avatar{width:40px;height:40px;border-radius:50%;background:var(--gray-200);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;color:var(--gray-700)}
+.testi-name{font-size:0.85rem;font-weight:600}
+.testi-city{font-size:0.72rem;color:var(--gray-500)}
+
+/* INSTAGRAM */
+.insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
+.insta-item{aspect-ratio:1;background:var(--gray-100);border-radius:4px;overflow:hidden;cursor:pointer;position:relative;transition:transform var(--transition)}
+.insta-item:hover{transform:scale(1.02);z-index:1}
+.insta-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:2rem}
+.insta-hover{position:absolute;inset:0;background:rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity var(--transition);color:#fff;font-size:1.2rem}
+.insta-item:hover .insta-hover{opacity:1}
+
+/* BRAND STORY */
+.brand-story{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.story-visual{background:var(--gray-100);border-radius:var(--radius-xl);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:6rem;position:relative;overflow:hidden}
+.story-label{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:0.75rem}
+.story-title{font-family:var(--font-serif);font-size:2rem;font-weight:600;margin-bottom:1.25rem;line-height:1.2}
+.story-text{font-size:0.9rem;line-height:1.8;color:var(--gray-700);margin-bottom:1rem}
+.story-values{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1.5rem}
+.story-val{display:flex;align-items:center;gap:0.6rem;font-size:0.85rem;font-weight:500}
+.story-val i{color:var(--gold);font-size:1.1rem}
+
+/* NEWSLETTER */
+.newsletter{background:var(--black);padding:4rem 2rem;text-align:center}
+.newsletter-inner{max-width:560px;margin:0 auto}
+.newsletter h3{font-family:var(--font-serif);font-size:1.8rem;color:#fff;margin-bottom:0.5rem}
+.newsletter p{color:rgba(255,255,255,0.6);font-size:0.9rem;margin-bottom:1.5rem}
+.newsletter-form{display:flex;gap:0.5rem;max-width:440px;margin:0 auto}
+.newsletter-form input{flex:1;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:40px;padding:0.75rem 1.25rem;color:#fff;font-size:0.875rem;outline:none;transition:all var(--transition)}
+.newsletter-form input:focus{border-color:var(--gold);background:rgba(255,255,255,0.15)}
+.newsletter-form input::placeholder{color:rgba(255,255,255,0.4)}
+.newsletter-form button{background:var(--gold);color:var(--black);border:none;padding:0.75rem 1.5rem;border-radius:40px;font-size:0.8rem;font-weight:700;letter-spacing:0.08em;white-space:nowrap;transition:all var(--transition)}
+.newsletter-form button:hover{background:var(--gold-light)}
+
+/* FOOTER */
+.footer{background:var(--gray-900);color:#e0dcd5;padding:4rem 2rem 1.5rem}
+.footer-inner{max-width:1400px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand .f-logo{font-family:var(--font-serif);font-size:1.5rem;font-weight:700;margin-bottom:0.25rem}
+.footer-brand .f-tagline{font-size:0.72rem;letter-spacing:0.1em;color:var(--gray-500)}
+.footer-brand p{font-size:0.85rem;color:var(--gray-500);line-height:1.7;margin:1rem 0}
+.footer-social{display:flex;gap:0.5rem;margin-top:1rem}
+.social-btn{width:36px;height:36px;border-radius:50%;border:1px solid #333;display:flex;align-items:center;justify-content:center;color:var(--gray-500);font-size:0.9rem;transition:all var(--transition)}
+.social-btn:hover{border-color:var(--gold);color:var(--gold)}
+.footer-col h4{font-size:0.75rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#fff;margin-bottom:1.25rem}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:0.7rem}
+.footer-col ul li a{font-size:0.85rem;color:var(--gray-500);transition:color var(--transition)}
+.footer-col ul li a:hover{color:var(--gold-light)}
+.footer-bottom{border-top:1px solid #222;padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:gap}
+.footer-copy{font-size:0.78rem;color:var(--gray-500)}
+.payment-icons{display:flex;gap:0.5rem;align-items:center}
+.pay-icon{background:#222;border-radius:4px;padding:0.25rem 0.5rem;font-size:0.65rem;font-weight:700;color:#aaa;letter-spacing:0.05em}
+
+/* SHOP PAGE */
+.shop-layout{display:grid;grid-template-columns:240px 1fr;gap:2rem;padding:2rem 1.5rem;max-width:1400px;margin:0 auto}
+.filter-panel{border-right:1px solid var(--gray-200);padding-right:2rem}
+.filter-section{margin-bottom:1.75rem;padding-bottom:1.75rem;border-bottom:1px solid var(--gray-200)}
+.filter-section:last-child{border-bottom:none}
+.filter-title{font-size:0.8rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.filter-list{display:flex;flex-direction:column;gap:0.5rem}
+.filter-item{display:flex;align-items:center;gap:0.6rem;font-size:0.85rem;color:var(--gray-700);cursor:pointer}
+.filter-item input[type=checkbox]{accent-color:var(--black);width:14px;height:14px}
+.size-chips{display:flex;flex-wrap:wrap;gap:0.5rem}
+.size-chip{border:1px solid var(--gray-200);border-radius:4px;padding:0.35rem 0.6rem;font-size:0.8rem;font-weight:500;cursor:pointer;transition:all var(--transition)}
+.size-chip:hover,.size-chip.active{background:var(--black);color:#fff;border-color:var(--black)}
+.color-swatches{display:flex;flex-wrap:wrap;gap:0.5rem}
+.color-swatch{width:24px;height:24px;border-radius:50%;border:2px solid #fff;outline:2px solid var(--gray-200);cursor:pointer;transition:all var(--transition)}
+.color-swatch.active{outline:2px solid var(--black)}
+.price-range{display:flex;flex-direction:column;gap:0.75rem}
+.price-range input[type=range]{width:100%;accent-color:var(--black)}
+.price-labels{display:flex;justify-content:space-between;font-size:0.78rem;color:var(--gray-500)}
+.shop-main{}
+.shop-toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:0.75rem}
+.shop-count{font-size:0.85rem;color:var(--gray-500)}
+.sort-select{background:var(--gray-100);border:1px solid var(--gray-200);border-radius:var(--radius);padding:0.5rem 0.75rem;font-size:0.8rem;color:var(--black);outline:none}
+.view-toggles{display:flex;gap:4px}
+.view-toggle{background:none;border:1px solid var(--gray-200);border-radius:var(--radius);padding:0.4rem 0.6rem;color:var(--gray-500);font-size:0.9rem;transition:all var(--transition)}
+.view-toggle.active{background:var(--black);color:#fff;border-color:var(--black)}
+
+/* PRODUCT DETAIL */
+.pd-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;padding:2rem 1.5rem;max-width:1300px;margin:0 auto}
+.pd-gallery{position:sticky;top:80px}
+.pd-main-img{aspect-ratio:3/4;background:var(--gray-100);border-radius:var(--radius-xl);display:flex;align-items:center;justify-content:center;font-size:7rem;margin-bottom:0.75rem;cursor:zoom-in;overflow:hidden;transition:all var(--transition)}
+.pd-thumbs{display:flex;gap:0.5rem}
+.pd-thumb{width:70px;height:90px;background:var(--gray-100);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:1.5rem;cursor:pointer;border:2px solid transparent;transition:all var(--transition)}
+.pd-thumb.active{border-color:var(--black)}
+.pd-info{}
+.pd-breadcrumb{font-size:0.78rem;color:var(--gray-500);margin-bottom:1rem}
+.pd-breadcrumb span{color:var(--gold)}
+.pd-category{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:0.5rem}
+.pd-name{font-family:var(--font-serif);font-size:1.8rem;font-weight:600;line-height:1.2;margin-bottom:0.75rem}
+.pd-rating{display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem}
+.pd-price{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem}
+.pd-price-current{font-size:1.8rem;font-weight:700}
+.pd-price-original{font-size:1.1rem;color:var(--gray-500);text-decoration:line-through}
+.pd-price-save{background:rgba(192,57,43,0.1);color:var(--red);font-size:0.8rem;font-weight:700;padding:0.25rem 0.6rem;border-radius:20px}
+.pd-separator{height:1px;background:var(--gray-200);margin:1.25rem 0}
+.pd-label{font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gray-700);margin-bottom:0.6rem}
+.pd-colors-row{display:flex;gap:0.6rem;align-items:center}
+.pd-color-btn{width:32px;height:32px;border-radius:50%;border:3px solid #fff;outline:2px solid var(--gray-200);cursor:pointer;transition:all var(--transition)}
+.pd-color-btn.active{outline:2px solid var(--black)}
+.pd-sizes{display:flex;gap:0.5rem;flex-wrap:wrap}
+.pd-size-btn{border:1px solid var(--gray-200);border-radius:var(--radius);padding:0.6rem 0.9rem;font-size:0.85rem;font-weight:500;background:#fff;cursor:pointer;transition:all var(--transition);min-width:48px;text-align:center}
+.pd-size-btn:hover{border-color:var(--gray-500)}
+.pd-size-btn.active{background:var(--black);color:#fff;border-color:var(--black)}
+.pd-size-btn.sold-out{color:var(--gray-300);cursor:not-allowed;text-decoration:line-through}
+.qty-row{display:flex;align-items:center;gap:1rem}
+.qty-ctrl{display:flex;align-items:center;border:1px solid var(--gray-200);border-radius:var(--radius);overflow:hidden}
+.qty-btn{background:none;border:none;width:40px;height:44px;font-size:1.1rem;color:var(--gray-700);transition:all var(--transition)}
+.qty-btn:hover{background:var(--gray-100)}
+.qty-num{width:44px;text-align:center;font-size:0.95rem;font-weight:500;border:none;border-left:1px solid var(--gray-200);border-right:1px solid var(--gray-200);height:44px;outline:none;background:#fff}
+.pd-actions{display:flex;gap:0.75rem;margin-top:1.5rem}
+.btn-cart{flex:1;background:var(--black);color:#fff;border:none;padding:1rem;border-radius:40px;font-size:0.875rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;transition:all var(--transition);display:flex;align-items:center;justify-content:center;gap:0.5rem}
+.btn-cart:hover{background:var(--gray-700)}
+.btn-buy{flex:1;background:var(--gold);color:var(--black);border:none;padding:1rem;border-radius:40px;font-size:0.875rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;transition:all var(--transition)}
+.btn-buy:hover{background:var(--gold-light)}
+.btn-wish{width:50px;height:50px;border-radius:50%;border:1.5px solid var(--gray-200);background:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--gray-500);transition:all var(--transition)}
+.btn-wish:hover{border-color:var(--red);color:var(--red)}
+.pd-meta{display:flex;flex-direction:column;gap:0.5rem;margin-top:1.5rem;font-size:0.82rem;color:var(--gray-500)}
+.pd-meta span{display:flex;align-items:center;gap:0.4rem}
+.pd-meta i{color:var(--gold)}
+.pd-tabs{display:flex;gap:0;border-bottom:1px solid var(--gray-200);margin-top:2rem}
+.pd-tab{background:none;border:none;border-bottom:2px solid transparent;padding:0.75rem 1.25rem;font-size:0.85rem;font-weight:500;color:var(--gray-500);cursor:pointer;transition:all var(--transition)}
+.pd-tab.active{color:var(--black);border-bottom-color:var(--black)}
+.pd-tab-content{padding:1.25rem 0;font-size:0.88rem;line-height:1.8;color:var(--gray-700)}
+
+/* CART */
+.cart-layout{display:grid;grid-template-columns:1fr 360px;gap:2rem;max-width:1200px;margin:0 auto;padding:2rem 1.5rem}
+.cart-header-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem}
+.cart-header-row h2{font-family:var(--font-serif);font-size:1.6rem}
+.cart-item{display:grid;grid-template-columns:100px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid var(--gray-200);align-items:start}
+.cart-item-img{aspect-ratio:3/4;background:var(--gray-100);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:2.5rem}
+.cart-item-name{font-size:0.95rem;font-weight:500;margin-bottom:0.25rem}
+.cart-item-meta{font-size:0.78rem;color:var(--gray-500);margin-bottom:0.75rem}
+.cart-item-actions{display:flex;align-items:center;justify-content:space-between}
+.cart-item-price{font-size:1rem;font-weight:600}
+.cart-remove{background:none;border:none;font-size:0.78rem;color:var(--gray-500);text-decoration:underline;cursor:pointer;transition:color var(--transition)}
+.cart-remove:hover{color:var(--red)}
+.coupon-row{display:flex;gap:0.5rem;margin:1.5rem 0}
+.coupon-input{flex:1;border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:0.7rem 1rem;font-size:0.85rem;outline:none;transition:all var(--transition)}
+.coupon-input:focus{border-color:var(--black)}
+.coupon-btn{background:var(--black);color:#fff;border:none;padding:0.7rem 1.25rem;border-radius:var(--radius);font-size:0.8rem;font-weight:600;white-space:nowrap}
+.order-summary-card{background:var(--gray-50);border-radius:var(--radius-lg);padding:1.5rem;position:sticky;top:80px}
+.order-summary-card h3{font-family:var(--font-serif);font-size:1.15rem;margin-bottom:1.25rem}
+.summary-row{display:flex;justify-content:space-between;font-size:0.875rem;margin-bottom:0.75rem;color:var(--gray-700)}
+.summary-row.total{font-size:1rem;font-weight:700;color:var(--black);padding-top:0.75rem;border-top:1.5px solid var(--gray-200);margin-top:0.25rem}
+.free-ship{font-size:0.75rem;color:#27ae60;background:rgba(39,174,96,0.08);padding:0.4rem 0.75rem;border-radius:20px;margin:0.75rem 0;text-align:center;font-weight:500}
+.payment-methods-row{margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--gray-200)}
+.payment-methods-row p{font-size:0.72rem;color:var(--gray-500);margin-bottom:0.5rem;letter-spacing:0.05em;text-transform:uppercase}
+.pay-methods{display:flex;gap:0.4rem;flex-wrap:wrap}
+.pay-method-badge{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:0.3rem 0.5rem;font-size:0.68rem;font-weight:600;color:var(--gray-700)}
+
+/* CHECKOUT */
+.checkout-layout{display:grid;grid-template-columns:1fr 380px;gap:2rem;max-width:1200px;margin:0 auto;padding:2rem 1.5rem}
+.checkout-steps{display:flex;gap:0;margin-bottom:2rem;border-bottom:1px solid var(--gray-200)}
+.checkout-step{padding:0.75rem 0;font-size:0.8rem;font-weight:600;color:var(--gray-500);flex:1;text-align:center;position:relative;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer}
+.checkout-step.active{color:var(--black);border-bottom:2px solid var(--black)}
+.checkout-step.done{color:var(--gold)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.form-group{margin-bottom:1rem}
+.form-label{display:block;font-size:0.78rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--gray-700);margin-bottom:0.4rem}
+.form-input{width:100%;border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:0.75rem 1rem;font-size:0.9rem;outline:none;transition:all var(--transition);background:#fff;color:var(--black)}
+.form-input:focus{border-color:var(--black)}
+.form-select{width:100%;border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:0.75rem 1rem;font-size:0.9rem;outline:none;background:#fff;color:var(--black);cursor:pointer}
+.payment-option{border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:1rem 1.25rem;margin-bottom:0.75rem;cursor:pointer;transition:all var(--transition);display:flex;align-items:center;gap:0.75rem}
+.payment-option.selected{border-color:var(--black);background:var(--gray-50)}
+.payment-option input[type=radio]{accent-color:var(--black)}
+.payment-option-label{font-size:0.9rem;font-weight:500}
+.payment-option-desc{font-size:0.75rem;color:var(--gray-500)}
+.checkout-section{margin-bottom:2rem}
+.checkout-section-title{font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.25rem;padding-bottom:0.75rem;border-bottom:1px solid var(--gray-200)}
+.btn-place-order{width:100%;background:var(--black);color:#fff;border:none;padding:1.1rem;border-radius:40px;font-size:0.9rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;transition:all var(--transition);margin-top:1rem}
+.btn-place-order:hover{background:var(--gray-700)}
+
+/* DASHBOARD */
+.dash-layout{display:grid;grid-template-columns:240px 1fr;gap:2rem;max-width:1200px;margin:0 auto;padding:2rem 1.5rem}
+.dash-sidebar{}
+.dash-nav{border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden}
+.dash-nav-item{display:flex;align-items:center;gap:0.75rem;padding:0.9rem 1.25rem;font-size:0.875rem;color:var(--gray-700);cursor:pointer;border-bottom:1px solid var(--gray-200);transition:all var(--transition)}
+.dash-nav-item:last-child{border-bottom:none}
+.dash-nav-item:hover,.dash-nav-item.active{background:var(--gray-50);color:var(--black)}
+.dash-nav-item.active{background:var(--black);color:#fff}
+.dash-nav-item i{font-size:1rem}
+.dash-profile-card{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;margin-bottom:1.25rem}
+.dash-avatar{width:64px;height:64px;border-radius:50%;background:var(--black);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:700;margin:0 auto 0.75rem}
+.dash-name{font-size:1rem;font-weight:600;margin-bottom:0.2rem}
+.dash-email{font-size:0.78rem;color:var(--gray-500)}
+.dash-stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem}
+.dash-stat{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.1rem;text-align:center}
+.dash-stat-num{font-size:1.5rem;font-weight:700;margin-bottom:0.2rem}
+.dash-stat-label{font-size:0.72rem;color:var(--gray-500);letter-spacing:0.05em}
+.order-row{display:grid;grid-template-columns:1fr 1fr 1fr 1fr auto;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-200);align-items:center;font-size:0.85rem}
+.order-id{font-weight:600;color:var(--gold)}
+.order-status{padding:0.25rem 0.6rem;border-radius:20px;font-size:0.72rem;font-weight:700}
+.status-delivered{background:rgba(39,174,96,0.1);color:#27ae60}
+.status-processing{background:rgba(201,168,76,0.15);color:var(--gold)}
+.status-shipped{background:rgba(52,152,219,0.1);color:#2980b9}
+
+/* ADMIN */
+.admin-layout{background:var(--gray-900);min-height:80vh;display:grid;grid-template-columns:220px 1fr}
+.admin-sidebar{background:#111;padding:1.5rem 0;border-right:1px solid #222}
+.admin-logo{padding:0 1.25rem 1.5rem;font-family:var(--font-serif);font-size:1.2rem;color:#fff;border-bottom:1px solid #222;margin-bottom:1rem}
+.admin-logo span{display:block;font-size:0.65rem;font-family:var(--font-sans);letter-spacing:0.1em;color:#666;margin-top:2px;text-transform:uppercase}
+.admin-nav-item{display:flex;align-items:center;gap:0.75rem;padding:0.7rem 1.25rem;font-size:0.82rem;color:#888;cursor:pointer;transition:all var(--transition)}
+.admin-nav-item:hover{background:rgba(255,255,255,0.05);color:#ddd}
+.admin-nav-item.active{background:rgba(201,168,76,0.1);color:var(--gold);border-right:2px solid var(--gold)}
+.admin-nav-item i{font-size:1rem}
+.admin-main{padding:2rem;overflow-y:auto;color:#e0dcd5}
+.admin-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem}
+.admin-top h1{font-family:var(--font-serif);font-size:1.5rem;color:#fff}
+.admin-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem}
+.admin-stat{background:#1a1815;border:1px solid #2a2723;border-radius:var(--radius-lg);padding:1.25rem}
+.admin-stat-label{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#666;margin-bottom:0.4rem}
+.admin-stat-value{font-size:1.5rem;font-weight:700;color:#fff}
+.admin-stat-change{font-size:0.72rem;color:#27ae60;margin-top:0.3rem}
+.admin-table{width:100%;border-collapse:collapse;font-size:0.82rem;margin-top:1rem}
+.admin-table th{text-align:left;padding:0.75rem 1rem;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#666;border-bottom:1px solid #222}
+.admin-table td{padding:0.9rem 1rem;border-bottom:1px solid #1e1c1a;color:#ccc}
+.admin-table tr:hover td{background:rgba(255,255,255,0.02)}
+.admin-section-title{font-size:0.85rem;font-weight:600;color:#aaa;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1rem}
+.admin-badge{padding:0.25rem 0.5rem;border-radius:4px;font-size:0.68rem;font-weight:700}
+.admin-badge-green{background:rgba(39,174,96,0.15);color:#2ecc71}
+.admin-badge-yellow{background:rgba(241,196,15,0.15);color:#f1c40f}
+.admin-badge-red{background:rgba(192,57,43,0.15);color:#e74c3c}
+.admin-btn{background:rgba(201,168,76,0.15);color:var(--gold);border:1px solid rgba(201,168,76,0.3);padding:0.5rem 1rem;border-radius:var(--radius);font-size:0.78rem;font-weight:600;cursor:pointer;transition:all var(--transition)}
+.admin-btn:hover{background:rgba(201,168,76,0.25)}
+
+/* PAGES */
+.page-hero{background:var(--gray-50);padding:3rem 2rem;text-align:center;border-bottom:1px solid var(--gray-200)}
+.page-hero h1{font-family:var(--font-serif);font-size:2rem;font-weight:600;margin-bottom:0.5rem}
+.page-hero p{color:var(--gray-500);font-size:0.9rem}
+.breadcrumb{font-size:0.78rem;color:var(--gray-500);margin-bottom:0.5rem}
+.breadcrumb span{color:var(--gold)}
+.content-page{max-width:900px;margin:0 auto;padding:3rem 1.5rem}
+.faq-item{border-bottom:1px solid var(--gray-200);padding:1rem 0}
+.faq-q{font-size:0.95rem;font-weight:500;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-a{font-size:0.875rem;line-height:1.8;color:var(--gray-500);margin-top:0.75rem;display:none}
+.faq-a.open{display:block}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:1000px;margin:0 auto;padding:3rem 1.5rem}
+.contact-method{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem}
+.contact-icon{width:44px;height:44px;background:var(--gray-100);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--gold);flex-shrink:0}
+
+/* WHATSAPP */
+.wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:0.5rem}
+.wa-btn{width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:all var(--transition);border:none;cursor:pointer}
+.wa-btn:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,0.5)}
+.wa-tooltip{background:var(--black);color:#fff;font-size:0.78rem;padding:0.4rem 0.75rem;border-radius:20px;white-space:nowrap;opacity:0;transform:translateX(10px);transition:all var(--transition)}
+.wa-float:hover .wa-tooltip{opacity:1;transform:none}
+
+/* BOTTOM NAV (mobile) */
+.nav-bottom{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--gray-200);z-index:200;padding:0.5rem 0 0.75rem}
+.nav-bottom-inner{display:flex;justify-content:space-around}
+.nav-bottom-btn{display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:none;font-size:0.6rem;color:var(--gray-500);padding:0.3rem 0.75rem;transition:color var(--transition)}
+.nav-bottom-btn i{font-size:1.2rem}
+.nav-bottom-btn.active{color:var(--black)}
+
+/* MODAL */
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:500;align-items:center;justify-content:center}
+.modal-bg.open{display:flex}
+.modal-box{background:#fff;border-radius:var(--radius-xl);max-width:500px;width:90%;max-height:90vh;overflow-y:auto;padding:2rem;position:relative}
+.modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.2rem;color:var(--gray-500);cursor:pointer}
+
+/* TOAST */
+.toast-container{position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);z-index:999;display:flex;flex-direction:column;gap:0.5rem;align-items:center}
+.toast{background:var(--black);color:#fff;padding:0.75rem 1.5rem;border-radius:40px;font-size:0.85rem;font-weight:500;opacity:0;transform:translateY(10px);transition:all 0.3s;pointer-events:none;white-space:nowrap}
+.toast.show{opacity:1;transform:none}
+.toast.success{background:#27ae60}
+
+/* MISC */
+.tag{background:var(--gray-100);border-radius:20px;padding:0.3rem 0.75rem;font-size:0.75rem;font-weight:500;display:inline-block}
+.chip-row{display:flex;gap:0.5rem;flex-wrap:wrap;margin:0.5rem 0}
+.section-divider{height:1px;background:var(--gray-200);max-width:1400px;margin:0 auto}
+.trust-row{background:var(--gray-50);border-top:1px solid var(--gray-200);border-bottom:1px solid var(--gray-200)}
+.trust-row-inner{max-width:1400px;margin:0 auto;padding:1.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.trust-item{display:flex;align-items:center;gap:0.75rem;font-size:0.82rem;font-weight:500}
+.trust-item i{font-size:1.3rem;color:var(--gold)}
+
+@media(max-width:768px){
+.nav-links{display:none}
+.search-bar{max-width:180px}
+.nav-mobile-toggle{display:block}
+.hero{height:70vh}
+.cat-grid{grid-template-columns:1fr 1fr}
+.cat-card:first-child{grid-column:span 2;aspect-ratio:2/1}
+.products-grid{grid-template-columns:repeat(2,1fr);gap:1rem}
+.testi-grid{grid-template-columns:1fr}
+.insta-grid{grid-template-columns:repeat(3,1fr)}
+.brand-story{grid-template-columns:1fr}
+.footer-top{grid-template-columns:1fr 1fr;gap:2rem}
+.shop-layout{grid-template-columns:1fr}
+.filter-panel{display:none}
+.pd-layout{grid-template-columns:1fr}
+.pd-gallery{position:static}
+.cart-layout{grid-template-columns:1fr}
+.checkout-layout{grid-template-columns:1fr}
+.form-row{grid-template-columns:1fr}
+.dash-layout{grid-template-columns:1fr}
+.dash-sidebar{display:none}
+.admin-layout{grid-template-columns:1fr}
+.admin-sidebar{display:none}
+.admin-stats{grid-template-columns:1fr 1fr}
+.trust-row-inner{grid-template-columns:1fr 1fr}
+.nav-bottom{display:block}
+body{padding-bottom:70px}
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement">
+  🎁 FREE SHIPPING on orders above <strong>₨2,500</strong> — Use code <strong>RAHBAR10</strong> for 10% OFF your first order
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="showPage('home')" style="cursor:pointer">
+      RAHBAR
+      <span>رہبر — EST. 2024</span>
+    </div>
+    <div class="nav-links">
+      <a href="#" onclick="showPage('home');return false" class="active" id="nl-home">Home</a>
+      <a href="#" onclick="showPage('shop');return false" id="nl-shop">Shop</a>
+      <a href="#" onclick="showPage('about');return false" id="nl-about">About</a>
+      <a href="#" onclick="showPage('blog');return false" id="nl-blog">Blog</a>
+      <a href="#" onclick="showPage('contact');return false" id="nl-contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <div class="search-bar">
+        <i class="ti ti-search" style="color:var(--gray-500);font-size:0.9rem" aria-hidden="true"></i>
+        <input type="text" placeholder="Search products…" oninput="handleSearch(this.value)">
+      </div>
+      <button class="nav-btn" onclick="toggleDark()" title="Toggle dark mode"><i class="ti ti-moon" id="darkIcon"></i></button>
+      <button class="nav-btn" onclick="showPage('wishlist')" title="Wishlist"><i class="ti ti-heart"></i></button>
+      <button class="nav-btn" onclick="showPage('dashboard')" title="Account"><i class="ti ti-user"></i></button>
+      <button class="nav-btn" onclick="showPage('cart')" title="Cart" style="position:relative">
+        <i class="ti ti-shopping-bag"></i>
+        <span class="cart-badge" id="cartBadge">3</span>
+      </button>
+    </div>
+    <button class="nav-mobile-toggle" onclick="toggleMobileMenu()"><i class="ti ti-menu-2"></i></button>
+  </div>
+</nav>
+
+<!-- PAGES CONTAINER -->
+<div id="pagesContainer">
+
+<!-- ============ HOME PAGE ============ -->
+<div id="page-home" class="page">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">NEW COLLECTION — SUMMER 2025</p>
+    <h1>Wear Your<br><em>Confidence</em></h1>
+    <p class="hero-sub">Premium Pakistani streetwear crafted for the bold generation. Quality you can feel, style that speaks.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="showPage('shop')">Shop the Collection</button>
+      <button class="btn-outline-white" onclick="showPage('about')">Our Story</button>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">50K+</div>
+        <div class="hero-stat-label">Happy Customers</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">200+</div>
+        <div class="hero-stat-label">Products</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">All PK</div>
+        <div class="hero-stat-label">Nationwide Delivery</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" onclick="document.getElementById('trust-bar').scrollIntoView({behavior:'smooth'})">
+    <div class="scroll-line"></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-row" id="trust-bar">
+  <div class="trust-row-inner">
+    <div class="trust-item"><i class="ti ti-truck-delivery" aria-hidden="true"></i><span>Nationwide Delivery</span></div>
+    <div class="trust-item"><i class="ti ti-refresh" aria-hidden="true"></i><span>Easy Returns & Exchange</span></div>
+    <div class="trust-item"><i class="ti ti-shield-check" aria-hidden="true"></i><span>100% Authentic Products</span></div>
+    <div class="trust-item"><i class="ti ti-cash" aria-hidden="true"></i><span>Cash on Delivery Available</span></div>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<section class="page-section">
+  <div class="section-header">
+    <div>
+      <p class="section-label">Browse by Category</p>
+      <h2 class="section-title">Shop Collections</h2>
+    </div>
+    <a href="#" class="view-all-link" onclick="showPage('shop');return false">View All <i class="ti ti-arrow-right"></i></a>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="showPage('shop')">
+      <div class="cat-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#16213e);font-size:5rem">🧥</div>
+      <div class="cat-overlay">
+        <div class="cat-name">Hoodies & Sweatshirts</div>
+        <div class="cat-count">48 Products</div>
+      </div>
+    </div>
+    <div class="cat-card" onclick="showPage('shop')">
+      <div class="cat-placeholder" style="background:linear-gradient(135deg,#2d1b2e,#4a1040)">👕</div>
+      <div class="cat-overlay">
+        <div class="cat-name">T-Shirts</div>
+        <div class="cat-count">120 Products</div>
+      </div>
+    </div>
+    <div class="cat-card" onclick="showPage('shop')">
+      <div class="cat-placeholder" style="background:linear-gradient(135deg,#1a2e1a,#0d4a0d)">🧣</div>
+      <div class="cat-overlay">
+        <div class="cat-name">Accessories</div>
+        <div class="cat-count">35 Products</div>
+      </div>
+    </div>
+    <div class="cat-card" onclick="showPage('shop')">
+      <div class="cat-placeholder" style="background:linear-gradient(135deg,#2e1a0a,#4a2800)">🥼</div>
+      <div class="cat-overlay">
+        <div class="cat-name">Jackets</div>
+        <div class="cat-count">28 Products</div>
+      </div>
+    </div>
+    <div class="cat-card" onclick="showPage('shop')">
+      <div class="cat-placeholder" style="background:linear-gradient(135deg,#0a2030,#002040)">👗</div>
+      <div class="cat-overlay">
+        <div class="cat-name">Oversized Shirts</div>
+        <div class="cat-count">42 Products</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section class="section-alt">
+  <div class="section-alt-inner">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Just Dropped</p>
+        <h2 class="section-title">New Arrivals</h2>
+      </div>
+      <a href="#" class="view-all-link" onclick="showPage('shop');return false">View All <i class="ti ti-arrow-right"></i></a>
+    </div>
+    <div class="products-grid" id="newArrivalsGrid"></div>
+  </div>
+</section>
+
+<!-- OFFER BANNER -->
+<div class="offer-banner">
+  <div class="offer-pattern"></div>
+  <div class="offer-banner-inner">
+    <p class="offer-eyebrow">⚡ FLASH SALE — LIMITED TIME</p>
+    <h2 class="offer-title">Up to <strong>40% OFF</strong><br>Summer Essentials</h2>
+    <p class="offer-sub">Don't miss our biggest sale of the season. Stock is running out fast!</p>
+    <div class="countdown">
+      <div class="countdown-box"><div class="countdown-num" id="cd-h">08</div><div class="countdown-label">Hours</div></div>
+      <div class="countdown-box"><div class="countdown-num" id="cd-m">45</div><div class="countdown-label">Minutes</div></div>
+      <div class="countdown-box"><div class="countdown-num" id="cd-s">30</div><div class="countdown-label">Seconds</div></div>
+    </div>
+    <div class="coupon-code" onclick="copyCoupon()"><i class="ti ti-tag"></i> SUMMER40 <i class="ti ti-copy"></i></div>
+    <button class="btn-primary" style="margin-top:0.5rem" onclick="showPage('shop')">Shop Sale Now</button>
+  </div>
+</div>
+
+<!-- BEST SELLERS -->
+<section class="page-section">
+  <div class="section-header">
+    <div>
+      <p class="section-label">Customer Favourites</p>
+      <h2 class="section-title">Best Sellers</h2>
+    </div>
+    <a href="#" class="view-all-link" onclick="showPage('shop');return false">View All <i class="ti ti-arrow-right"></i></a>
+  </div>
+  <div class="products-grid" id="bestSellersGrid"></div>
+</section>
+
+<!-- BRAND STORY -->
+<section class="section-alt">
+  <div class="section-alt-inner">
+    <div class="brand-story">
+      <div class="story-visual">🇵🇰</div>
+      <div>
+        <p class="story-label">The RAHBAR Story</p>
+        <h2 class="story-title">Born in Pakistan,<br>Made for the World</h2>
+        <p class="story-text">RAHBAR — meaning "guide" or "leader" — was founded with a single belief: Pakistani youth deserves world-class fashion that reflects their identity, ambition, and culture.</p>
+        <p class="story-text">We source premium fabrics, work with skilled local artisans, and design pieces that blend contemporary streetwear with Pakistani sensibility.</p>
+        <div class="story-values">
+          <div class="story-val"><i class="ti ti-certificate"></i> Premium Quality Fabrics</div>
+          <div class="story-val"><i class="ti ti-heart"></i> Made With Love</div>
+          <div class="story-val"><i class="ti ti-map-pin"></i> Pakistan-First Brand</div>
+          <div class="story-val"><i class="ti ti-leaf"></i> Sustainable Practices</div>
+        </div>
+        <button class="btn-primary" style="margin-top:1.5rem;background:var(--black);color:#fff" onclick="showPage('about')">Read Our Story</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="page-section">
+  <div class="section-header">
+    <div>
+      <p class="section-label">What They Say</p>
+      <h2 class="section-title">Customer Reviews</h2>
+    </div>
+    <div style="display:flex;align-items:center;gap:0.5rem">
+      <span style="font-size:1.3rem;color:var(--gold)">★★★★★</span>
+      <span style="font-size:0.85rem;color:var(--gray-500)">4.9/5 from 2,400+ reviews</span>
+    </div>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Best quality I've ever found in Pakistan at this price point. The hoodie is incredibly soft and the stitching is perfect. Already ordered 3 more pieces!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">AK</div>
+        <div><div class="testi-name">Ahmed Khan</div><div class="testi-city">Karachi, Sindh</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Fast delivery to Lahore in just 2 days! The oversized shirt fits exactly as described. COD option makes it so convenient. RAHBAR is my go-to brand now."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SA</div>
+        <div><div class="testi-name">Sara Aslam</div><div class="testi-city">Lahore, Punjab</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★☆</div>
+      <p class="testi-text">"The tracksuit is absolutely premium. Feels like international brand quality but at a Pakistani price. Customer service was also very helpful with my size query!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">ZM</div>
+        <div><div class="testi-name">Zain Malik</div><div class="testi-city">Islamabad, ICT</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="section-alt" style="padding:3rem 1.5rem">
+  <div class="section-alt-inner">
+    <div style="text-align:center;margin-bottom:1.5rem">
+      <p class="section-label">Follow Us</p>
+      <h2 class="section-title">@rahbar.pk on Instagram</h2>
+    </div>
+    <div class="insta-grid">
+      <div class="insta-item"><div class="insta-placeholder">👕</div><div class="insta-hover"><i class="ti ti-heart"></i></div></div>
+      <div class="insta-item"><div class="insta-placeholder">🧥</div><div class="insta-hover"><i class="ti ti-heart"></i></div></div>
+      <div class="insta-item"><div class="insta-placeholder">🥼</div><div class="insta-hover"><i class="ti ti-heart"></i></div></div>
+      <div class="insta-item"><div class="insta-placeholder">🎽</div><div class="insta-hover"><i class="ti ti-heart"></i></div></div>
+      <div class="insta-item"><div class="insta-placeholder">🧣</div><div class="insta-hover"><i class="ti ti-heart"></i></div></div>
+      <div class="insta-item"><div class="insta-placeholder">👗</div><div class="insta-hover"><i class="ti ti-heart"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <div class="newsletter-inner">
+    <h3>Stay in the Loop</h3>
+    <p>Get early access to new drops, exclusive offers, and style inspiration delivered to your inbox.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Your email address…">
+      <button onclick="showToast('Subscribed! Welcome to RAHBAR 🎉','success')">Subscribe</button>
+    </div>
+    <p style="font-size:0.72rem;color:rgba(255,255,255,0.35);margin-top:0.75rem">No spam. Unsubscribe anytime.</p>
+  </div>
+</div>
+
+</div><!-- /page-home -->
+
+<!-- ============ SHOP PAGE ============ -->
+<div id="page-shop" class="page" style="display:none">
+  <div class="page-hero">
+    <div class="breadcrumb">Home / <span>Shop</span></div>
+    <h1>All Products</h1>
+    <p>Premium Pakistani streetwear — 200+ products</p>
+  </div>
+  <div class="shop-layout">
+    <!-- FILTERS -->
+    <aside class="filter-panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem">
+        <span style="font-size:0.9rem;font-weight:600">Filters</span>
+        <button style="background:none;border:none;font-size:0.75rem;color:var(--gold);cursor:pointer;font-weight:600" onclick="clearFilters()">Clear All</button>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Category <i class="ti ti-chevron-down" style="font-size:0.8rem"></i></div>
+        <div class="filter-list">
+          <label class="filter-item"><input type="checkbox" onchange="applyFilters()"> T-Shirts (120)</label>
+          <label class="filter-item"><input type="checkbox" onchange="applyFilters()"> Hoodies (48)</label>
+          <label class="filter-item"><input type="checkbox" onchange="applyFilters()"> Sweatshirts (32)</label>
+          <label class="filter-item"><input type="checkbox" onchange="applyFilters()"> Oversized Shirts (42)</label>
+          <label class="filter-item"><input type="checkbox" onchange="applyFilters()"> Jackets (28)</label>
+          <label class="filter-item"><input type="checkbox" onchange="applyFilters()"> Polos (24)</label>
+          <label class="filter-item"><input type="checkbox" onchange="applyFilters()"> Tracksuits (18)</label>
+          <label class="filter-item"><input type="checkbox" onchange="applyFilters()"> Accessories (35)</label>
+        </div>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Size <i class="ti ti-chevron-down" style="font-size:0.8rem"></i></div>
+        <div class="size-chips">
+          <div class="size-chip" onclick="toggleSizeChip(this)">XS</div>
+          <div class="size-chip" onclick="toggleSizeChip(this)">S</div>
+          <div class="size-chip active" onclick="toggleSizeChip(this)">M</div>
+          <div class="size-chip" onclick="toggleSizeChip(this)">L</div>
+          <div class="size-chip" onclick="toggleSizeChip(this)">XL</div>
+          <div class="size-chip" onclick="toggleSizeChip(this)">XXL</div>
+        </div>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Color <i class="ti ti-chevron-down" style="font-size:0.8rem"></i></div>
+        <div class="color-swatches">
+          <div class="color-swatch active" style="background:#000" title="Black" onclick="toggleSwatch(this)"></div>
+          <div class="color-swatch" style="background:#fff;border-color:#ddd" title="White" onclick="toggleSwatch(this)"></div>
+          <div class="color-swatch" style="background:#c9a84c" title="Camel" onclick="toggleSwatch(this)"></div>
+          <div class="color-swatch" style="background:#1a1a2e" title="Navy" onclick="toggleSwatch(this)"></div>
+          <div class="color-swatch" style="background:#4a4a4a" title="Charcoal" onclick="toggleSwatch(this)"></div>
+          <div class="color-swatch" style="background:#8b1a1a" title="Burgundy" onclick="toggleSwatch(this)"></div>
+          <div class="color-swatch" style="background:#2d5a27" title="Olive" onclick="toggleSwatch(this)"></div>
+          <div class="color-swatch" style="background:#b5a697" title="Beige" onclick="toggleSwatch(this)"></div>
+        </div>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Price Range <i class="ti ti-chevron-down" style="font-size:0.8rem"></i></div>
+        <div class="price-range">
+          <input type="range" min="500" max="15000" value="8000" id="priceRange" oninput="updatePriceLabel(this.value)">
+          <div class="price-labels"><span>₨500</span><span id="priceLabel">Up to ₨8,000</span></div>
+        </div>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Availability</div>
+        <div class="filter-list">
+          <label class="filter-item"><input type="checkbox" checked> In Stock</label>
+          <label class="filter-item"><input type="checkbox"> Pre-Order</label>
+        </div>
+      </div>
+    </aside>
+    <!-- PRODUCTS -->
+    <div class="shop-main">
+      <div class="shop-toolbar">
+        <span class="shop-count" id="shopCount">Showing 200 products</span>
+        <div style="display:flex;align-items:center;gap:0.75rem">
+          <select class="sort-select" onchange="sortProducts(this.value)">
+            <option value="newest">Newest First</option>
+            <option value="bestselling">Best Selling</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+          <div class="view-toggles">
+            <button class="view-toggle active" onclick="setGrid(this,4)"><i class="ti ti-layout-grid"></i></button>
+            <button class="view-toggle" onclick="setGrid(this,3)"><i class="ti ti-layout-columns"></i></button>
+            <button class="view-toggle" onclick="setGrid(this,2)"><i class="ti ti-layout-list"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="products-grid" id="shopGrid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PRODUCT DETAIL ============ -->
+<div id="page-product" class="page" style="display:none">
+  <div class="pd-layout">
+    <!-- GALLERY -->
+    <div class="pd-gallery">
+      <div class="pd-main-img" id="pdMainImg">👕</div>
+      <div class="pd-thumbs">
+        <div class="pd-thumb active" onclick="selectThumb(this,'👕')">👕</div>
+        <div class="pd-thumb" onclick="selectThumb(this,'🔍')">🔍</div>
+        <div class="pd-thumb" onclick="selectThumb(this,'🎽')">🎽</div>
+        <div class="pd-thumb" onclick="selectThumb(this,'📐')">📐</div>
+      </div>
+    </div>
+    <!-- INFO -->
+    <div class="pd-info">
+      <div class="pd-breadcrumb">Home / Shop / <span>T-Shirts</span></div>
+      <div class="pd-category">T-Shirts</div>
+      <h1 class="pd-name" id="pdName">Classic Heavyweight Tee</h1>
+      <div class="pd-rating">
+        <span style="color:var(--gold)">★★★★★</span>
+        <span style="font-size:0.85rem;color:var(--gray-500)">4.8 (284 reviews)</span>
+        <span class="tag" style="margin-left:0.5rem;color:#27ae60;background:rgba(39,174,96,0.1)"><i class="ti ti-check" style="font-size:0.8rem"></i> In Stock</span>
+      </div>
+      <div class="pd-price">
+        <span class="pd-price-current" id="pdPrice">₨2,499</span>
+        <span class="pd-price-original">₨3,499</span>
+        <span class="pd-price-save">Save 28%</span>
+      </div>
+      <div class="pd-separator"></div>
+      <div style="margin-bottom:1.25rem">
+        <div class="pd-label">Color: <strong id="selectedColor">Midnight Black</strong></div>
+        <div class="pd-colors-row">
+          <div class="pd-color-btn active" style="background:#000" onclick="selectPDColor(this,'Midnight Black')" title="Black"></div>
+          <div class="pd-color-btn" style="background:#fff;border-color:#ddd" onclick="selectPDColor(this,'Crisp White')" title="White"></div>
+          <div class="pd-color-btn" style="background:#c9a84c" onclick="selectPDColor(this,'Desert Gold')" title="Gold"></div>
+          <div class="pd-color-btn" style="background:#4a4a4a" onclick="selectPDColor(this,'Charcoal Grey')" title="Charcoal"></div>
+          <div class="pd-color-btn" style="background:#8b1a1a" onclick="selectPDColor(this,'Rich Burgundy')" title="Burgundy"></div>
+        </div>
+      </div>
+      <div style="margin-bottom:1.25rem">
+        <div class="pd-label" style="display:flex;justify-content:space-between;align-items:center">
+          Size: <strong id="selectedSize">M</strong>
+          <button style="background:none;border:none;font-size:0.75rem;color:var(--gold);cursor:pointer;font-weight:500" onclick="openSizeGuide()"><i class="ti ti-ruler-2"></i> Size Guide</button>
+        </div>
+        <div class="pd-sizes">
+          <button class="pd-size-btn" onclick="selectPDSize(this)">XS</button>
+          <button class="pd-size-btn" onclick="selectPDSize(this)">S</button>
+          <button class="pd-size-btn active" onclick="selectPDSize(this)">M</button>
+          <button class="pd-size-btn" onclick="selectPDSize(this)">L</button>
+          <button class="pd-size-btn" onclick="selectPDSize(this)">XL</button>
+          <button class="pd-size-btn sold-out" onclick="null">XXL</button>
+        </div>
+      </div>
+      <div class="pd-separator"></div>
+      <div class="qty-row">
+        <div class="pd-label" style="margin:0">Quantity:</div>
+        <div class="qty-ctrl">
+          <button class="qty-btn" onclick="changeQty(-1)">−</button>
+          <input type="number" class="qty-num" id="pdQty" value="1" min="1" max="10">
+          <button class="qty-btn" onclick="changeQty(1)">+</button>
+        </div>
+        <span style="font-size:0.78rem;color:#27ae60"><i class="ti ti-check"></i> 12 left in stock</span>
+      </div>
+      <div class="pd-actions">
+        <button class="btn-cart" onclick="addToCartFromPD()"><i class="ti ti-shopping-cart"></i> Add to Cart</button>
+        <button class="btn-buy" onclick="showPage('checkout')">Buy Now</button>
+        <button class="btn-wish" onclick="toggleWishFromPD(this)"><i class="ti ti-heart"></i></button>
+      </div>
+      <div class="pd-meta">
+        <span><i class="ti ti-truck-delivery"></i> Free delivery on orders above ₨2,500</span>
+        <span><i class="ti ti-refresh"></i> 7-day easy returns & exchanges</span>
+        <span><i class="ti ti-cash"></i> Cash on Delivery available</span>
+        <span><i class="ti ti-shield-check"></i> 100% authentic product</span>
+      </div>
+      <div class="pd-tabs">
+        <button class="pd-tab active" onclick="switchTab(this,'desc')">Description</button>
+        <button class="pd-tab" onclick="switchTab(this,'shipping')">Shipping</button>
+        <button class="pd-tab" onclick="switchTab(this,'reviews')">Reviews (284)</button>
+        <button class="pd-tab" onclick="switchTab(this,'sizeguide')">Size Guide</button>
+      </div>
+      <div class="pd-tab-content" id="tabDesc">
+        <p>The <strong>RAHBAR Classic Heavyweight Tee</strong> is our best-selling premium cotton t-shirt, made from 280GSM ring-spun cotton for maximum durability and comfort.</p>
+        <ul style="margin:1rem 0 0 1.25rem;line-height:2">
+          <li>280GSM ring-spun premium cotton</li>
+          <li>Oversized relaxed fit</li>
+          <li>Ribbed crew neck collar</li>
+          <li>Double-needle stitching throughout</li>
+          <li>Pre-washed to minimize shrinkage</li>
+          <li>Machine washable at 30°C</li>
+        </ul>
+      </div>
+      <div class="pd-tab-content" id="tabShipping" style="display:none">
+        <p>🚚 <strong>Standard Delivery:</strong> 3–5 business days — ₨200</p>
+        <p>⚡ <strong>Express Delivery:</strong> 1–2 business days — ₨350</p>
+        <p>🎁 <strong>Free Delivery</strong> on all orders above ₨2,500</p>
+        <p style="margin-top:0.75rem">Nationwide delivery available across all cities in Pakistan including Karachi, Lahore, Islamabad, Peshawar, Quetta, Multan, Faisalabad and more.</p>
+      </div>
+      <div class="pd-tab-content" id="tabReviews" style="display:none">
+        <div style="display:flex;align-items:center;gap:1.5rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--gray-200)">
+          <div style="text-align:center"><div style="font-size:3rem;font-weight:700">4.8</div><div style="color:var(--gold);font-size:1rem">★★★★★</div><div style="font-size:0.75rem;color:var(--gray-500)">284 reviews</div></div>
+          <div style="flex:1">
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:4px"><span style="font-size:0.75rem;width:12px">5</span><div style="flex:1;height:6px;background:var(--gray-200);border-radius:3px"><div style="width:72%;height:100%;background:var(--gold);border-radius:3px"></div></div><span style="font-size:0.72rem;color:var(--gray-500)">72%</span></div>
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:4px"><span style="font-size:0.75rem;width:12px">4</span><div style="flex:1;height:6px;background:var(--gray-200);border-radius:3px"><div style="width:18%;height:100%;background:var(--gold);border-radius:3px"></div></div><span style="font-size:0.72rem;color:var(--gray-500)">18%</span></div>
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:4px"><span style="font-size:0.75rem;width:12px">3</span><div style="flex:1;height:6px;background:var(--gray-200);border-radius:3px"><div style="width:7%;height:100%;background:var(--gold);border-radius:3px"></div></div><span style="font-size:0.72rem;color:var(--gray-500)">7%</span></div>
+          </div>
+        </div>
+        <div style="border-bottom:1px solid var(--gray-200);padding-bottom:1rem;margin-bottom:1rem">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.3rem"><span style="font-weight:600;font-size:0.88rem">Ahmed K.</span><span style="color:var(--gold);font-size:0.8rem">★★★★★</span></div>
+          <div style="font-size:0.75rem;color:var(--gray-500);margin-bottom:0.4rem">Verified Purchase · Karachi</div>
+          <p style="font-size:0.85rem;line-height:1.7;color:var(--gray-700)">Best quality tee I've ever bought in Pakistan. The fabric is super thick and premium. Will definitely buy again!</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.3rem"><span style="font-weight:600;font-size:0.88rem">Sara M.</span><span style="color:var(--gold);font-size:0.8rem">★★★★☆</span></div>
+          <div style="font-size:0.75rem;color:var(--gray-500);margin-bottom:0.4rem">Verified Purchase · Lahore</div>
+          <p style="font-size:0.85rem;line-height:1.7;color:var(--gray-700)">Love the oversized fit! Ordered size L and it fits perfectly. Color is exactly as shown. Fast delivery too!</p>
+        </div>
+      </div>
+      <div class="pd-tab-content" id="tabSizeguide" style="display:none">
+        <table style="width:100%;border-collapse:collapse;font-size:0.82rem">
+          <thead><tr style="background:var(--gray-100)">
+            <th style="padding:0.6rem 0.75rem;text-align:left;font-weight:600">Size</th>
+            <th style="padding:0.6rem 0.75rem;text-align:center">Chest (cm)</th>
+            <th style="padding:0.6rem 0.75rem;text-align:center">Length (cm)</th>
+            <th style="padding:0.6rem 0.75rem;text-align:center">Shoulder (cm)</th>
+          </tr></thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--gray-200)"><td style="padding:0.6rem 0.75rem">XS</td><td style="padding:0.6rem 0.75rem;text-align:center">88–92</td><td style="padding:0.6rem 0.75rem;text-align:center">68</td><td style="padding:0.6rem 0.75rem;text-align:center">42</td></tr>
+            <tr style="border-bottom:1px solid var(--gray-200)"><td style="padding:0.6rem 0.75rem">S</td><td style="padding:0.6rem 0.75rem;text-align:center">92–96</td><td style="padding:0.6rem 0.75rem;text-align:center">70</td><td style="padding:0.6rem 0.75rem;text-align:center">44</td></tr>
+            <tr style="border-bottom:1px solid var(--gray-200);background:rgba(201,168,76,0.08)"><td style="padding:0.6rem 0.75rem;font-weight:600">M ★</td><td style="padding:0.6rem 0.75rem;text-align:center">96–100</td><td style="padding:0.6rem 0.75rem;text-align:center">72</td><td style="padding:0.6rem 0.75rem;text-align:center">46</td></tr>
+            <tr style="border-bottom:1px solid var(--gray-200)"><td style="padding:0.6rem 0.75rem">L</td><td style="padding:0.6rem 0.75rem;text-align:center">100–106</td><td style="padding:0.6rem 0.75rem;text-align:center">74</td><td style="padding:0.6rem 0.75rem;text-align:center">48</td></tr>
+            <tr style="border-bottom:1px solid var(--gray-200)"><td style="padding:0.6rem 0.75rem">XL</td><td style="padding:0.6rem 0.75rem;text-align:center">106–112</td><td style="padding:0.6rem 0.75rem;text-align:center">76</td><td style="padding:0.6rem 0.75rem;text-align:center">50</td></tr>
+            <tr><td style="padding:0.6rem 0.75rem">XXL</td><td style="padding:0.6rem 0.75rem;text-align:center">112–118</td><td style="padding:0.6rem 0.75rem;text-align:center">78</td><td style="padding:0.6rem 0.75rem;text-align:center">52</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:0.75rem;font-size:0.78rem;color:var(--gray-500)">★ Most popular size. Measurements in cm. If between sizes, go up for a more relaxed fit.</p>
+      </div>
+    </div>
+  </div>
+  <!-- RELATED -->
+  <section class="page-section" style="padding-top:2rem">
+    <div class="section-header">
+      <div><p class="section-label">You May Also Like</p><h2 class="section-title">Related Products</h2></div>
+    </div>
+    <div class="products-grid" id="relatedGrid"></div>
+  </section>
+</div>
+
+<!-- ============ CART PAGE ============ -->
+<div id="page-cart" class="page" style="display:none">
+  <div class="page-hero" style="padding:2rem">
+    <div class="breadcrumb">Home / <span>Cart</span></div>
+    <h1>Shopping Cart</h1>
+  </div>
+  <div class="cart-layout">
+    <div>
+      <div class="cart-header-row">
+        <h2>Your Items <span style="font-size:0.9rem;color:var(--gray-500);font-family:var(--font-sans);font-weight:400">(3 items)</span></h2>
+        <button style="background:none;border:none;font-size:0.8rem;color:var(--gray-500);cursor:pointer;text-decoration:underline">Continue Shopping</button>
+      </div>
+      <div id="cartItemsContainer">
+        <div class="cart-item">
+          <div class="cart-item-img">👕</div>
+          <div>
+            <div class="cart-item-name">Classic Heavyweight Tee</div>
+            <div class="cart-item-meta">Color: Midnight Black · Size: M</div>
+            <div class="cart-item-actions">
+              <div class="qty-ctrl" style="border:1px solid var(--gray-200);border-radius:var(--radius);overflow:hidden">
+                <button class="qty-btn" onclick="cartQty(this,-1)">−</button>
+                <input type="number" class="qty-num" value="2" min="1" style="background:#fff" onchange="updateCartTotal()">
+                <button class="qty-btn" onclick="cartQty(this,1)">+</button>
+              </div>
+              <span class="cart-item-price">₨4,998</span>
+            </div>
+            <button class="cart-remove" onclick="removeCartItem(this)" style="margin-top:0.5rem">Remove</button>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-img">🧥</div>
+          <div>
+            <div class="cart-item-name">Premium Fleece Hoodie</div>
+            <div class="cart-item-meta">Color: Charcoal · Size: L</div>
+            <div class="cart-item-actions">
+              <div class="qty-ctrl" style="border:1px solid var(--gray-200);border-radius:var(--radius);overflow:hidden">
+                <button class="qty-btn" onclick="cartQty(this,-1)">−</button>
+                <input type="number" class="qty-num" value="1" min="1" style="background:#fff" onchange="updateCartTotal()">
+                <button class="qty-btn" onclick="cartQty(this,1)">+</button>
+              </div>
+              <span class="cart-item-price">₨3,499</span>
+            </div>
+            <button class="cart-remove" onclick="removeCartItem(this)" style="margin-top:0.5rem">Remove</button>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-img">🧣</div>
+          <div>
+            <div class="cart-item-name">Signature Logo Cap</div>
+            <div class="cart-item-meta">Color: Black · Size: Free Size</div>
+            <div class="cart-item-actions">
+              <div class="qty-ctrl" style="border:1px solid var(--gray-200);border-radius:var(--radius);overflow:hidden">
+                <button class="qty-btn" onclick="cartQty(this,-1)">−</button>
+                <input type="number" class="qty-num" value="1" min="1" style="background:#fff" onchange="updateCartTotal()">
+                <button class="qty-btn" onclick="cartQty(this,1)">+</button>
+              </div>
+              <span class="cart-item-price">₨1,299</span>
+            </div>
+            <button class="cart-remove" onclick="removeCartItem(this)" style="margin-top:0.5rem">Remove</button>
+          </div>
+        </div>
+      </div>
+      <div class="coupon-row">
+        <input type="text" class="coupon-input" placeholder="Enter coupon code…" id="couponInput">
+        <button class="coupon-btn" onclick="applyCoupon()">Apply</button>
+      </div>
+    </div>
+    <div>
+      <div class="order-summary-card">
+        <h3>Order Summary</h3>
+        <div class="summary-row"><span>Subtotal (4 items)</span><span>₨9,796</span></div>
+        <div class="summary-row" id="discountRow" style="display:none;color:var(--red)"><span>Discount (SUMMER40)</span><span id="discountAmt">−₨980</span></div>
+        <div class="summary-row"><span>Shipping</span><span>₨200</span></div>
+        <div class="free-ship">🎉 Add ₨204 more for FREE shipping!</div>
+        <div class="summary-row total"><span>Total</span><span id="cartTotal">₨9,996</span></div>
+        <p style="font-size:0.72rem;color:var(--gray-500);margin-top:0.4rem">Inclusive of all taxes. Final charges at checkout.</p>
+        <button class="btn-primary" style="width:100%;margin-top:1rem;display:flex;align-items:center;justify-content:center;gap:0.5rem" onclick="showPage('checkout')"><i class="ti ti-lock"></i> Proceed to Checkout</button>
+        <div class="payment-methods-row">
+          <p>We Accept</p>
+          <div class="pay-methods">
+            <div class="pay-method-badge">COD</div>
+            <div class="pay-method-badge">Easypaisa</div>
+            <div class="pay-method-badge">JazzCash</div>
+            <div class="pay-method-badge">Card</div>
+            <div class="pay-method-badge">Bank</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CHECKOUT PAGE ============ -->
+<div id="page-checkout" class="page" style="display:none">
+  <div class="page-hero" style="padding:2rem">
+    <div class="breadcrumb">Home / Cart / <span>Checkout</span></div>
+    <h1>Secure Checkout</h1>
+  </div>
+  <div class="checkout-layout">
+    <div>
+      <div class="checkout-steps">
+        <div class="checkout-step done" id="cs1"><i class="ti ti-check"></i> Info</div>
+        <div class="checkout-step active" id="cs2">Shipping</div>
+        <div class="checkout-step" id="cs3">Payment</div>
+        <div class="checkout-step" id="cs4">Review</div>
+      </div>
+      <div class="checkout-section">
+        <div class="checkout-section-title">Contact Information</div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">First Name</label><input class="form-input" type="text" placeholder="Muhammad"></div>
+          <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" type="text" placeholder="Ahmed"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Phone Number</label><input class="form-input" type="tel" placeholder="+92 300 0000000"></div>
+          <div class="form-group"><label class="form-label">Email (Optional)</label><input class="form-input" type="email" placeholder="you@email.com"></div>
+        </div>
+      </div>
+      <div class="checkout-section">
+        <div class="checkout-section-title">Delivery Address</div>
+        <div class="form-group"><label class="form-label">Street Address</label><input class="form-input" type="text" placeholder="House #, Street, Block, Area"></div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">City</label>
+            <select class="form-select">
+              <option>Select City</option>
+              <option>Karachi</option><option>Lahore</option><option>Islamabad</option><option>Rawalpindi</option><option>Faisalabad</option><option>Multan</option><option>Peshawar</option><option>Quetta</option><option>Sialkot</option><option>Hyderabad</option>
+            </select>
+          </div>
+          <div class="form-group"><label class="form-label">Province</label>
+            <select class="form-select">
+              <option>Select Province</option>
+              <option>Sindh</option><option>Punjab</option><option>KPK</option><option>Balochistan</option><option>ICT</option><option>AJK</option><option>GB</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group"><label class="form-label">Postal Code</label><input class="form-input" type="text" placeholder="75500"></div>
+      </div>
+      <div class="checkout-section">
+        <div class="checkout-section-title">Payment Method</div>
+        <div class="payment-option selected">
+          <input type="radio" name="payment" value="cod" checked>
+          <div><div class="payment-option-label">💵 Cash on Delivery (COD)</div><div class="payment-option-desc">Pay when you receive your order</div></div>
+        </div>
+        <div class="payment-option" onclick="selectPayment(this)">
+          <input type="radio" name="payment" value="easypaisa">
+          <div><div class="payment-option-label">📱 Easypaisa</div><div class="payment-option-desc">Send payment to 0311-XXXXXXX</div></div>
+        </div>
+        <div class="payment-option" onclick="selectPayment(this)">
+          <input type="radio" name="payment" value="jazzcash">
+          <div><div class="payment-option-label">📲 JazzCash</div><div class="payment-option-desc">Send payment to 0300-XXXXXXX</div></div>
+        </div>
+        <div class="payment-option" onclick="selectPayment(this)">
+          <input type="radio" name="payment" value="card">
+          <div><div class="payment-option-label">💳 Debit/Credit Card</div><div class="payment-option-desc">Visa, Mastercard — Secured by SSL</div></div>
+        </div>
+        <div class="payment-option" onclick="selectPayment(this)">
+          <input type="radio" name="payment" value="bank">
+          <div><div class="payment-option-label">🏦 Bank Transfer</div><div class="payment-option-desc">Direct bank deposit / IBFT</div></div>
+        </div>
+      </div>
+      <button class="btn-place-order" onclick="placeOrder()"><i class="ti ti-lock"></i> Place Order — ₨9,996</button>
+    </div>
+    <div>
+      <div class="order-summary-card">
+        <h3>Order Summary</h3>
+        <div style="margin-bottom:1rem">
+          <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 0;border-bottom:1px solid var(--gray-200)">
+            <div style="width:50px;height:60px;background:var(--gray-100);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0">👕</div>
+            <div style="flex:1"><div style="font-size:0.85rem;font-weight:500">Classic Heavyweight Tee × 2</div><div style="font-size:0.75rem;color:var(--gray-500)">Black · M</div></div>
+            <div style="font-size:0.88rem;font-weight:600">₨4,998</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 0;border-bottom:1px solid var(--gray-200)">
+            <div style="width:50px;height:60px;background:var(--gray-100);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0">🧥</div>
+            <div style="flex:1"><div style="font-size:0.85rem;font-weight:500">Premium Fleece Hoodie × 1</div><div style="font-size:0.75rem;color:var(--gray-500)">Charcoal · L</div></div>
+            <div style="font-size:0.88rem;font-weight:600">₨3,499</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 0">
+            <div style="width:50px;height:60px;background:var(--gray-100);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0">🧣</div>
+            <div style="flex:1"><div style="font-size:0.85rem;font-weight:500">Signature Logo Cap × 1</div><div style="font-size:0.75rem;color:var(--gray-500)">Black · Free Size</div></div>
+            <div style="font-size:0.88rem;font-weight:600">₨1,299</div>
+          </div>
+        </div>
+        <div class="summary-row"><span>Subtotal</span><span>₨9,796</span></div>
+        <div class="summary-row"><span>Shipping</span><span>₨200</span></div>
+        <div class="summary-row total"><span>Total (PKR)</span><span>₨9,996</span></div>
+        <div class="trust-item" style="margin-top:1rem;font-size:0.78rem;gap:0.5rem"><i class="ti ti-shield-lock" style="color:#27ae60"></i><span style="color:var(--gray-500)">SSL Encrypted · 100% Secure</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ USER DASHBOARD ============ -->
+<div id="page-dashboard" class="page" style="display:none">
+  <div class="page-hero">
+    <div class="breadcrumb">Home / <span>My Account</span></div>
+    <h1>My Account</h1>
+  </div>
+  <div class="dash-layout">
+    <aside class="dash-sidebar">
+      <div class="dash-profile-card">
+        <div class="dash-avatar">MA</div>
+        <div class="dash-name">Muhammad Ahmed</div>
+        <div class="dash-email">ahmed@email.com</div>
+      </div>
+      <div class="dash-nav">
+        <div class="dash-nav-item active" onclick="switchDashTab('orders')"><i class="ti ti-package"></i> My Orders</div>
+        <div class="dash-nav-item" onclick="switchDashTab('wishlist')"><i class="ti ti-heart"></i> Wishlist</div>
+        <div class="dash-nav-item" onclick="switchDashTab('addresses')"><i class="ti ti-map-pin"></i> Addresses</div>
+        <div class="dash-nav-item" onclick="switchDashTab('profile')"><i class="ti ti-user"></i> Profile</div>
+        <div class="dash-nav-item" onclick="switchDashTab('password')"><i class="ti ti-lock"></i> Password</div>
+        <div class="dash-nav-item" onclick="showToast('Logged out successfully')"><i class="ti ti-logout"></i> Logout</div>
+      </div>
+    </aside>
+    <div class="dash-main" id="dashMain">
+      <div class="dash-stats-row">
+        <div class="dash-stat"><div class="dash-stat-num">12</div><div class="dash-stat-label">Total Orders</div></div>
+        <div class="dash-stat"><div class="dash-stat-num">8</div><div class="dash-stat-label">Wishlist Items</div></div>
+        <div class="dash-stat"><div class="dash-stat-num">₨47K</div><div class="dash-stat-label">Total Spent</div></div>
+      </div>
+      <h2 style="font-family:var(--font-serif);font-size:1.3rem;margin-bottom:1rem">Recent Orders</h2>
+      <div style="border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr auto;gap:1rem;padding:0.75rem 1rem;background:var(--gray-50);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gray-500)">
+          <span>Order ID</span><span>Date</span><span>Amount</span><span>Status</span><span></span>
+        </div>
+        <div class="order-row" style="padding:0 1rem">
+          <span class="order-id">#RHB-2481</span>
+          <span>15 Jan 2025</span>
+          <span>₨9,996</span>
+          <span class="order-status status-delivered">Delivered</span>
+          <button style="background:none;border:1px solid var(--gray-200);border-radius:var(--radius);padding:0.3rem 0.7rem;font-size:0.75rem;cursor:pointer" onclick="showToast('Order details coming soon')">View</button>
+        </div>
+        <div class="order-row" style="padding:0 1rem">
+          <span class="order-id">#RHB-2349</span>
+          <span>8 Jan 2025</span>
+          <span>₨4,499</span>
+          <span class="order-status status-shipped">Shipped</span>
+          <button style="background:none;border:1px solid var(--gray-200);border-radius:var(--radius);padding:0.3rem 0.7rem;font-size:0.75rem;cursor:pointer" onclick="showToast('Tracking: TCS-882901')">Track</button>
+        </div>
+        <div class="order-row" style="padding:0 1rem">
+          <span class="order-id">#RHB-2201</span>
+          <span>1 Jan 2025</span>
+          <span>₨2,499</span>
+          <span class="order-status status-processing">Processing</span>
+          <button style="background:none;border:1px solid var(--gray-200);border-radius:var(--radius);padding:0.3rem 0.7rem;font-size:0.75rem;cursor:pointer" onclick="showToast('Order details coming soon')">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ABOUT PAGE ============ -->
+<div id="page-about" class="page" style="display:none">
+  <div class="page-hero">
+    <div class="breadcrumb">Home / <span>About Us</span></div>
+    <h1>About RAHBAR رہبر</h1>
+    <p>Pakistan's Premium Fashion Brand</p>
+  </div>
+  <div class="content-page">
+    <div style="text-align:center;margin-bottom:3rem">
+      <p style="font-family:var(--font-serif);font-size:1.8rem;font-weight:500;line-height:1.4;color:var(--black);max-width:600px;margin:0 auto">"Rahbar means guide — and we guide Pakistani youth towards bold, authentic self-expression."</p>
+    </div>
+    <div class="brand-story" style="margin-bottom:3rem">
+      <div>
+        <p class="story-label">Our Mission</p>
+        <h2 class="story-title">Quality Without Compromise</h2>
+        <p class="story-text">Founded in 2024 in Karachi, RAHBAR was born from a simple frustration: Pakistani fashion-conscious youth had to choose between expensive imported brands or low-quality local alternatives.</p>
+        <p class="story-text">We changed that. RAHBAR bridges the gap — offering international-grade quality, contemporary design, and affordable prices, all rooted in Pakistani pride.</p>
+      </div>
+      <div class="story-visual">🇵🇰</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin:2rem 0">
+      <div style="text-align:center;padding:2rem;background:var(--gray-50);border-radius:var(--radius-xl)">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem">🎯</div>
+        <h3 style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.5rem">Our Vision</h3>
+        <p style="font-size:0.85rem;color:var(--gray-500);line-height:1.7">To be Pakistan's most loved premium streetwear brand, inspiring confidence in every wearer.</p>
+      </div>
+      <div style="text-align:center;padding:2rem;background:var(--gray-50);border-radius:var(--radius-xl)">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem">💎</div>
+        <h3 style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.5rem">Our Values</h3>
+        <p style="font-size:0.85rem;color:var(--gray-500);line-height:1.7">Quality, authenticity, and accessibility. Every piece is crafted to outlast trends and outperform expectations.</p>
+      </div>
+      <div style="text-align:center;padding:2rem;background:var(--gray-50);border-radius:var(--radius-xl)">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem">🌱</div>
+        <h3 style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.5rem">Sustainability</h3>
+        <p style="font-size:0.85rem;color:var(--gray-500);line-height:1.7">Responsible sourcing, ethical manufacturing, and a commitment to reducing our environmental footprint.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CONTACT PAGE ============ -->
+<div id="page-contact" class="page" style="display:none">
+  <div class="page-hero">
+    <div class="breadcrumb">Home / <span>Contact</span></div>
+    <h1>Get In Touch</h1>
+    <p>We're here to help — reach out anytime</p>
+  </div>
+  <div class="contact-grid">
+    <div>
+      <h2 style="font-family:var(--font-serif);font-size:1.4rem;margin-bottom:1.5rem">Contact Us</h2>
+      <div class="contact-method">
+        <div class="contact-icon"><i class="ti ti-brand-whatsapp"></i></div>
+        <div><div style="font-weight:600;margin-bottom:0.2rem">WhatsApp (Fastest)</div><div style="font-size:0.85rem;color:var(--gray-500)">+92 311 RAHBAR (724227)</div><div style="font-size:0.75rem;color:var(--gray-500)">Mon–Sat, 10am–8pm PKT</div></div>
+      </div>
+      <div class="contact-method">
+        <div class="contact-icon"><i class="ti ti-mail"></i></div>
+        <div><div style="font-weight:600;margin-bottom:0.2rem">Email</div><div style="font-size:0.85rem;color:var(--gray-500)">support@rahbar.pk</div><div style="font-size:0.75rem;color:var(--gray-500)">Response within 24 hours</div></div>
+      </div>
+      <div class="contact-method">
+        <div class="contact-icon"><i class="ti ti-map-pin"></i></div>
+        <div><div style="font-weight:600;margin-bottom:0.2rem">Office</div><div style="font-size:0.85rem;color:var(--gray-500)">RAHBAR HQ, SITE Area, Karachi, Sindh, Pakistan</div></div>
+      </div>
+      <div class="contact-method">
+        <div class="contact-icon"><i class="ti ti-clock"></i></div>
+        <div><div style="font-weight:600;margin-bottom:0.2rem">Working Hours</div><div style="font-size:0.85rem;color:var(--gray-500)">Monday to Saturday: 10:00 AM – 8:00 PM<br>Sunday: Closed</div></div>
+      </div>
+    </div>
+    <div>
+      <h2 style="font-family:var(--font-serif);font-size:1.4rem;margin-bottom:1.5rem">Send a Message</h2>
+      <div class="form-row"><div class="form-group"><label class="form-label">Your Name</label><input class="form-input" type="text" placeholder="Full Name"></div><div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" placeholder="+92 300 0000000"></div></div>
+      <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="you@email.com"></div>
+      <div class="form-group"><label class="form-label">Subject</label><select class="form-select"><option>General Inquiry</option><option>Order Issue</option><option>Return / Exchange</option><option>Product Question</option><option>Wholesale</option></select></div>
+      <div class="form-group"><label class="form-label">Message</label><textarea class="form-input" rows="4" placeholder="How can we help you?"></textarea></div>
+      <button class="btn-primary" style="background:var(--black);color:#fff;width:100%;display:flex;align-items:center;justify-content:center;gap:0.5rem" onclick="showToast('Message sent! We will reply within 24 hours ✉️','success')"><i class="ti ti-send"></i> Send Message</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FAQ PAGE ============ -->
+<div id="page-faq" class="page" style="display:none">
+  <div class="page-hero">
+    <div class="breadcrumb">Home / <span>FAQs</span></div>
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about RAHBAR</p>
+  </div>
+  <div class="content-page">
+    <div style="margin-bottom:2rem">
+      <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin-bottom:1rem;color:var(--gold)">📦 Orders & Shipping</h2>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How long does delivery take? <i class="ti ti-plus"></i></div><div class="faq-a">Standard delivery takes 3–5 business days. Express delivery (1–2 business days) is also available at extra cost. Delivery times may vary based on your city and availability. Karachi, Lahore, and Islamabad typically receive orders faster.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is Cash on Delivery (COD) available? <i class="ti ti-plus"></i></div><div class="faq-a open">Yes! COD is available nationwide across Pakistan. You pay when you receive your order. No advance payment required. COD is our most popular payment option!</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How can I track my order? <i class="ti ti-plus"></i></div><div class="faq-a">Once your order is shipped, you will receive a tracking number via SMS and/or WhatsApp. You can use this to track your parcel through our courier partner's website.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you ship to all cities in Pakistan? <i class="ti ti-plus"></i></div><div class="faq-a">Yes! We deliver nationwide to all major and minor cities including Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Quetta, Sialkot, Hyderabad, and hundreds more.</div></div>
+    </div>
+    <div style="margin-bottom:2rem">
+      <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin-bottom:1rem;color:var(--gold)">↩️ Returns & Exchanges</h2>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is your return policy? <i class="ti ti-plus"></i></div><div class="faq-a">We offer a 7-day return and exchange policy from the date of delivery. Items must be unworn, unwashed, and in original packaging with tags attached. Please contact us via WhatsApp to initiate a return.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I exchange for a different size? <i class="ti ti-plus"></i></div><div class="faq-a">Absolutely! Size exchanges are our most common request and we make them easy. Contact us within 7 days of delivery and we will arrange an exchange. Shipping charges for exchange are ₨200.</div></div>
+    </div>
+    <div>
+      <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin-bottom:1rem;color:var(--gold)">👕 Products & Sizing</h2>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do I know which size to order? <i class="ti ti-plus"></i></div><div class="faq-a">Each product page has a detailed size guide with measurements in centimeters. We recommend measuring your chest and comparing with the size chart. When in doubt, size up for a more relaxed fit.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What fabric/material do you use? <i class="ti ti-plus"></i></div><div class="faq-a">We use premium ring-spun cotton (240–320GSM depending on the product), French terry for hoodies and sweatshirts, and premium polyester blends for tracksuits. All materials are tested for durability and comfort.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ POLICIES PAGES ============ -->
+<div id="page-returns" class="page" style="display:none">
+  <div class="page-hero"><div class="breadcrumb">Home / <span>Return & Exchange Policy</span></div><h1>Return & Exchange Policy</h1></div>
+  <div class="content-page">
+    <p style="margin-bottom:1.5rem;font-size:0.9rem;line-height:1.8;color:var(--gray-700)">At RAHBAR, we stand behind the quality of our products. If you are not completely satisfied with your purchase, we are here to help.</p>
+    <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin:1.5rem 0 0.75rem">Return Window</h2>
+    <p style="font-size:0.9rem;line-height:1.8;color:var(--gray-700)">You have <strong>7 days</strong> from the date of delivery to return or exchange your item(s). After 7 days, unfortunately we cannot offer a return or exchange.</p>
+    <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin:1.5rem 0 0.75rem">Conditions for Return</h2>
+    <ul style="font-size:0.9rem;line-height:2;color:var(--gray-700);margin-left:1.5rem">
+      <li>Item must be in original condition — unworn and unwashed</li>
+      <li>Original tags must be attached</li>
+      <li>Item must be in original packaging</li>
+      <li>Proof of purchase required (order number)</li>
+    </ul>
+    <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin:1.5rem 0 0.75rem">Non-Returnable Items</h2>
+    <ul style="font-size:0.9rem;line-height:2;color:var(--gray-700);margin-left:1.5rem">
+      <li>Sale items (unless defective)</li>
+      <li>Accessories (caps, bags) for hygiene reasons</li>
+      <li>Items damaged by misuse</li>
+    </ul>
+    <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin:1.5rem 0 0.75rem">How to Return</h2>
+    <p style="font-size:0.9rem;line-height:1.8;color:var(--gray-700)">Contact us on WhatsApp at <strong>+92-311-RAHBAR</strong> with your order number and reason for return. We will guide you through the simple process. Refunds are processed within 5–7 business days after receiving the returned item.</p>
+  </div>
+</div>
+
+<div id="page-privacy" class="page" style="display:none">
+  <div class="page-hero"><div class="breadcrumb">Home / <span>Privacy Policy</span></div><h1>Privacy Policy</h1></div>
+  <div class="content-page">
+    <p style="font-size:0.85rem;color:var(--gray-500);margin-bottom:1.5rem">Last Updated: January 1, 2025</p>
+    <p style="font-size:0.9rem;line-height:1.8;color:var(--gray-700);margin-bottom:1.25rem">RAHBAR ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information.</p>
+    <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin:1.5rem 0 0.75rem">Information We Collect</h2>
+    <p style="font-size:0.9rem;line-height:1.8;color:var(--gray-700)">We collect information you provide when placing orders (name, address, phone, email), information about your device and browsing behavior on our website, and payment information (processed securely — we do not store card numbers).</p>
+    <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin:1.5rem 0 0.75rem">How We Use Your Information</h2>
+    <ul style="font-size:0.9rem;line-height:2;color:var(--gray-700);margin-left:1.5rem">
+      <li>To process and fulfill your orders</li>
+      <li>To communicate about your order status</li>
+      <li>To send marketing communications (you can opt out anytime)</li>
+      <li>To improve our website and customer experience</li>
+    </ul>
+    <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin:1.5rem 0 0.75rem">Data Security</h2>
+    <p style="font-size:0.9rem;line-height:1.8;color:var(--gray-700)">We use industry-standard SSL encryption to protect your data. We never sell your personal information to third parties. For questions, contact us at privacy@rahbar.pk</p>
+  </div>
+</div>
+
+<div id="page-shipping" class="page" style="display:none">
+  <div class="page-hero"><div class="breadcrumb">Home / <span>Shipping Policy</span></div><h1>Shipping Policy</h1></div>
+  <div class="content-page">
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-bottom:2rem">
+      <div style="background:var(--gray-50);border-radius:var(--radius-xl);padding:1.5rem;border:1px solid var(--gray-200)">
+        <div style="font-size:2rem;margin-bottom:0.5rem">🚚</div>
+        <h3 style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.5rem">Standard Delivery</h3>
+        <p style="font-size:0.85rem;color:var(--gray-500);margin-bottom:0.5rem">3–5 Business Days</p>
+        <p style="font-size:1.1rem;font-weight:700">₨200</p>
+      </div>
+      <div style="background:var(--gray-50);border-radius:var(--radius-xl);padding:1.5rem;border:1px solid var(--gray-200)">
+        <div style="font-size:2rem;margin-bottom:0.5rem">⚡</div>
+        <h3 style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.5rem">Express Delivery</h3>
+        <p style="font-size:0.85rem;color:var(--gray-500);margin-bottom:0.5rem">1–2 Business Days</p>
+        <p style="font-size:1.1rem;font-weight:700">₨350</p>
+      </div>
+      <div style="background:rgba(39,174,96,0.06);border-radius:var(--radius-xl);padding:1.5rem;border:1px solid rgba(39,174,96,0.2)">
+        <div style="font-size:2rem;margin-bottom:0.5rem">🎁</div>
+        <h3 style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.5rem">Free Shipping</h3>
+        <p style="font-size:0.85rem;color:var(--gray-500);margin-bottom:0.5rem">On orders above ₨2,500</p>
+        <p style="font-size:1.1rem;font-weight:700;color:#27ae60">FREE</p>
+      </div>
+      <div style="background:var(--gray-50);border-radius:var(--radius-xl);padding:1.5rem;border:1px solid var(--gray-200)">
+        <div style="font-size:2rem;margin-bottom:0.5rem">🌍</div>
+        <h3 style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.5rem">Coverage</h3>
+        <p style="font-size:0.85rem;color:var(--gray-500);margin-bottom:0.5rem">Nationwide Pakistan</p>
+        <p style="font-size:0.85rem;font-weight:600">All 4 Provinces + AJK + GB</p>
+      </div>
+    </div>
+    <h2 style="font-family:var(--font-serif);font-size:1.2rem;margin-bottom:0.75rem">Courier Partners</h2>
+    <p style="font-size:0.9rem;line-height:1.8;color:var(--gray-700)">We ship via TCS, Leopards Courier, and Pakistan Post depending on your location. You will receive a tracking number once your order is dispatched. Orders are typically processed within 1 business day of placing the order.</p>
+  </div>
+</div>
+
+<!-- ============ BLOG PAGE ============ -->
+<div id="page-blog" class="page" style="display:none">
+  <div class="page-hero">
+    <div class="breadcrumb">Home / <span>Blog</span></div>
+    <h1>RAHBAR Journal</h1>
+    <p>Style tips, fashion news, and brand stories</p>
+  </div>
+  <div class="page-section">
+    <div class="products-grid">
+      <div style="border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;cursor:pointer" onclick="showToast('Full article coming soon!')">
+        <div style="aspect-ratio:16/9;background:var(--gray-100);display:flex;align-items:center;justify-content:center;font-size:3rem">👕</div>
+        <div style="padding:1.25rem">
+          <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Style Guide</div>
+          <h3 style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.5rem;line-height:1.3">How to Style an Oversized Tee for Every Occasion</h3>
+          <p style="font-size:0.82rem;color:var(--gray-500);line-height:1.6">From casual hangouts to late-night drives — master the art of the oversized tee…</p>
+          <div style="font-size:0.72rem;color:var(--gray-500);margin-top:0.75rem">Jan 10, 2025 · 5 min read</div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;cursor:pointer" onclick="showToast('Full article coming soon!')">
+        <div style="aspect-ratio:16/9;background:var(--gray-100);display:flex;align-items:center;justify-content:center;font-size:3rem">🧥</div>
+        <div style="padding:1.25rem">
+          <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Fashion Tips</div>
+          <h3 style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.5rem;line-height:1.3">Winter Layering 101: The Pakistani Street Style Guide</h3>
+          <p style="font-size:0.82rem;color:var(--gray-500);line-height:1.6">Stay warm, stay stylish. Here is how to layer like a pro this winter season in Pakistan…</p>
+          <div style="font-size:0.72rem;color:var(--gray-500);margin-top:0.75rem">Jan 5, 2025 · 7 min read</div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;cursor:pointer" onclick="showToast('Full article coming soon!')">
+        <div style="aspect-ratio:16/9;background:var(--gray-100);display:flex;align-items:center;justify-content:center;font-size:3rem">🏆</div>
+        <div style="padding:1.25rem">
+          <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Brand Story</div>
+          <h3 style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.5rem;line-height:1.3">Why RAHBAR Chose Pakistan First — Our Origin Story</h3>
+          <p style="font-size:0.82rem;color:var(--gray-500);line-height:1.6">The story behind the brand that is redefining premium streetwear in Pakistan…</p>
+          <div style="font-size:0.72rem;color:var(--gray-500);margin-top:0.75rem">Dec 28, 2024 · 4 min read</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ WISHLIST PAGE ============ -->
+<div id="page-wishlist" class="page" style="display:none">
+  <div class="page-hero"><div class="breadcrumb">Home / <span>Wishlist</span></div><h1>My Wishlist</h1></div>
+  <div class="page-section" style="padding-top:2rem">
+    <div class="products-grid" id="wishlistGrid"></div>
+  </div>
+</div>
+
+<!-- ============ ADMIN DASHBOARD ============ -->
+<div id="page-admin" class="page" style="display:none">
+  <div class="admin-layout">
+    <div class="admin-sidebar">
+      <div class="admin-logo">RAHBAR <span>Admin Panel</span></div>
+      <div class="admin-nav-item active" onclick="switchAdminTab(this,'overview')"><i class="ti ti-dashboard"></i> Overview</div>
+      <div class="admin-nav-item" onclick="switchAdminTab(this,'products')"><i class="ti ti-shirt"></i> Products</div>
+      <div class="admin-nav-item" onclick="switchAdminTab(this,'orders')"><i class="ti ti-package"></i> Orders</div>
+      <div class="admin-nav-item" onclick="switchAdminTab(this,'customers')"><i class="ti ti-users"></i> Customers</div>
+      <div class="admin-nav-item" onclick="switchAdminTab(this,'coupons')"><i class="ti ti-discount"></i> Coupons</div>
+      <div class="admin-nav-item" onclick="switchAdminTab(this,'analytics')"><i class="ti ti-chart-bar"></i> Analytics</div>
+      <div class="admin-nav-item" style="margin-top:auto;border-top:1px solid #222" onclick="showPage('home')"><i class="ti ti-arrow-left"></i> Back to Store</div>
+    </div>
+    <div class="admin-main" id="adminMain">
+      <div class="admin-top"><h1>Dashboard Overview</h1><button class="admin-btn" onclick="showToast('Report exported!')"><i class="ti ti-download"></i> Export Report</button></div>
+      <div class="admin-stats">
+        <div class="admin-stat"><div class="admin-stat-label">Today's Revenue</div><div class="admin-stat-value">₨84,200</div><div class="admin-stat-change">↑ +18% vs yesterday</div></div>
+        <div class="admin-stat"><div class="admin-stat-label">Total Orders</div><div class="admin-stat-value">247</div><div class="admin-stat-change">↑ +12% this week</div></div>
+        <div class="admin-stat"><div class="admin-stat-label">Active Customers</div><div class="admin-stat-value">1,842</div><div class="admin-stat-change">↑ +8% this month</div></div>
+        <div class="admin-stat"><div class="admin-stat-label">Low Stock Alerts</div><div class="admin-stat-value" style="color:#f1c40f">6 items</div><div class="admin-stat-change" style="color:#e74c3c">⚠ Action needed</div></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem">
+        <div>
+          <div class="admin-section-title">Recent Orders</div>
+          <table class="admin-table" style="width:100%">
+            <thead><tr><th>Order</th><th>Customer</th><th>Amount</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td style="color:var(--gold)">#RHB-2485</td><td>Bilal Ahmed</td><td>₨4,998</td><td><span class="admin-badge admin-badge-yellow">Processing</span></td></tr>
+              <tr><td style="color:var(--gold)">#RHB-2484</td><td>Fatima Khan</td><td>₨7,499</td><td><span class="admin-badge admin-badge-green">Delivered</span></td></tr>
+              <tr><td style="color:var(--gold)">#RHB-2483</td><td>Hassan Ali</td><td>₨2,499</td><td><span class="admin-badge admin-badge-yellow">Shipped</span></td></tr>
+              <tr><td style="color:var(--gold)">#RHB-2482</td><td>Ayesha Siddiqi</td><td>₨12,996</td><td><span class="admin-badge admin-badge-red">Cancelled</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <div class="admin-section-title">Low Stock Alerts</div>
+          <table class="admin-table">
+            <thead><tr><th>Product</th><th>Size</th><th>Stock</th></tr></thead>
+            <tbody>
+              <tr><td>Classic Tee Black</td><td>M</td><td><span class="admin-badge admin-badge-red">2 left</span></td></tr>
+              <tr><td>Premium Hoodie</td><td>L</td><td><span class="admin-badge admin-badge-red">3 left</span></td></tr>
+              <tr><td>Logo Cap Black</td><td>OS</td><td><span class="admin-badge admin-badge-yellow">5 left</span></td></tr>
+              <tr><td>Tracksuit Navy</td><td>XL</td><td><span class="admin-badge admin-badge-yellow">4 left</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /pagesContainer -->
+
+<!-- FOOTER (outside pages for always-visible) -->
+<footer class="footer" id="mainFooter">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">RAHBAR رہبر</div>
+        <div class="f-tagline">PREMIUM PAKISTANI FASHION</div>
+        <p>Pakistan's premier streetwear brand — born in Karachi, worn nationwide. Quality you can feel, style that speaks.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="ti ti-brand-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="ti ti-brand-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="ti ti-brand-tiktok"></i></a>
+          <a href="#" class="social-btn"><i class="ti ti-brand-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="ti ti-brand-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('shop');return false">New Arrivals</a></li>
+          <li><a href="#" onclick="showPage('shop');return false">Best Sellers</a></li>
+          <li><a href="#" onclick="showPage('shop');return false">T-Shirts</a></li>
+          <li><a href="#" onclick="showPage('shop');return false">Hoodies</a></li>
+          <li><a href="#" onclick="showPage('shop');return false">Jackets</a></li>
+          <li><a href="#" onclick="showPage('shop');return false">Accessories</a></li>
+          <li><a href="#" onclick="showPage('shop');return false">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('faq');return false">FAQs</a></li>
+          <li><a href="#" onclick="showPage('shipping');return false">Shipping Policy</a></li>
+          <li><a href="#" onclick="showPage('returns');return false">Returns & Exchanges</a></li>
+          <li><a href="#" onclick="showPage('contact');return false">Contact Us</a></li>
+          <li><a href="#" onclick="showPage('dashboard');return false">Track Order</a></li>
+          <li><a href="#" onclick="showPage('privacy');return false">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('about');return false">About RAHBAR</a></li>
+          <li><a href="#" onclick="showPage('blog');return false">Blog / Journal</a></li>
+          <li><a href="#" onclick="showToast('Careers page coming soon!');return false">Careers</a></li>
+          <li><a href="#" onclick="showToast('Wholesale inquiry sent!');return false">Wholesale</a></li>
+          <li><a href="#" onclick="showPage('admin');return false">Admin Panel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 RAHBAR رہبر. All rights reserved. Made with ❤️ in Pakistan.</div>
+      <div class="payment-icons">
+        <div class="pay-icon">COD</div>
+        <div class="pay-icon">JazzCash</div>
+        <div class="pay-icon">Easypaisa</div>
+        <div class="pay-icon">VISA</div>
+        <div class="pay-icon">MC</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-float">
+  <div class="wa-tooltip">Chat with us on WhatsApp</div>
+  <button class="wa-btn" onclick="showToast('Opening WhatsApp... +92-311-RAHBAR')"><i class="ti ti-brand-whatsapp"></i></button>
+</div>
+
+<!-- MOBILE BOTTOM NAV -->
+<nav class="nav-bottom">
+  <div class="nav-bottom-inner">
+    <button class="nav-bottom-btn active" id="nb-home" onclick="showPage('home')"><i class="ti ti-home"></i><span>Home</span></button>
+    <button class="nav-bottom-btn" id="nb-shop" onclick="showPage('shop')"><i class="ti ti-shirt"></i><span>Shop</span></button>
+    <button class="nav-bottom-btn" id="nb-search" onclick="focusSearch()"><i class="ti ti-search"></i><span>Search</span></button>
+    <button class="nav-bottom-btn" id="nb-wishlist" onclick="showPage('wishlist')"><i class="ti ti-heart"></i><span>Saved</span></button>
+    <button class="nav-bottom-btn" id="nb-cart" onclick="showPage('cart')" style="position:relative"><i class="ti ti-shopping-bag"></i><span>Cart</span></button>
+  </div>
+</nav>
+
+<!-- TOAST -->
+<div class="toast-container"><div class="toast" id="mainToast"></div></div>
+
+<!-- SIZE GUIDE MODAL -->
+<div class="modal-bg" id="sizeModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeSizeGuide()"><i class="ti ti-x"></i></button>
+    <h2 style="font-family:var(--font-serif);margin-bottom:1rem">Size Guide</h2>
+    <table style="width:100%;border-collapse:collapse;font-size:0.82rem">
+      <thead><tr style="background:var(--gray-100)"><th style="padding:0.6rem;text-align:left">Size</th><th style="padding:0.6rem;text-align:center">Chest</th><th style="padding:0.6rem;text-align:center">Length</th><th style="padding:0.6rem;text-align:center">Shoulder</th></tr></thead>
+      <tbody>
+        <tr style="border-bottom:1px solid var(--gray-200)"><td style="padding:0.6rem">XS</td><td style="padding:0.6rem;text-align:center">88–92 cm</td><td style="padding:0.6rem;text-align:center">68 cm</td><td style="padding:0.6rem;text-align:center">42 cm</td></tr>
+        <tr style="border-bottom:1px solid var(--gray-200)"><td style="padding:0.6rem">S</td><td style="padding:0.6rem;text-align:center">92–96 cm</td><td style="padding:0.6rem;text-align:center">70 cm</td><td style="padding:0.6rem;text-align:center">44 cm</td></tr>
+        <tr style="border-bottom:1px solid var(--gray-200);background:rgba(201,168,76,0.06)"><td style="padding:0.6rem;font-weight:600">M ⭐</td><td style="padding:0.6rem;text-align:center">96–100 cm</td><td style="padding:0.6rem;text-align:center">72 cm</td><td style="padding:0.6rem;text-align:center">46 cm</td></tr>
+        <tr style="border-bottom:1px solid var(--gray-200)"><td style="padding:0.6rem">L</td><td style="padding:0.6rem;text-align:center">100–106 cm</td><td style="padding:0.6rem;text-align:center">74 cm</td><td style="padding:0.6rem;text-align:center">48 cm</td></tr>
+        <tr style="border-bottom:1px solid var(--gray-200)"><td style="padding:0.6rem">XL</td><td style="padding:0.6rem;text-align:center">106–112 cm</td><td style="padding:0.6rem;text-align:center">76 cm</td><td style="padding:0.6rem;text-align:center">50 cm</td></tr>
+        <tr><td style="padding:0.6rem">XXL</td><td style="padding:0.6rem;text-align:center">112–118 cm</td><td style="padding:0.6rem;text-align:center">78 cm</td><td style="padding:0.6rem;text-align:center">52 cm</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:0.75rem;font-size:0.78rem;color:var(--gray-500)">Tip: When between sizes, go up for a more relaxed fit.</p>
+  </div>
+</div>
+
+<script>
+const PRODUCTS = [
+  {id:1,name:"Classic Heavyweight Tee",cat:"T-Shirts",price:2499,original:3499,emoji:"👕",badge:"sale",colors:["#000","#fff","#c9a84c","#4a4a4a"],rating:4.8,reviews:284,isNew:false,isBest:true},
+  {id:2,name:"Premium Fleece Hoodie",cat:"Hoodies",price:3999,original:5499,emoji:"🧥",badge:"hot",colors:["#4a4a4a","#000","#1a1a2e"],rating:4.9,reviews:198,isNew:true,isBest:true},
+  {id:3,name:"Urban Oversized Shirt",cat:"Oversized",price:2199,original:null,emoji:"👗",badge:"new",colors:["#fff","#b5a697","#2d5a27"],rating:4.7,reviews:145,isNew:true,isBest:false},
+  {id:4,name:"Signature Polo",cat:"Polos",price:1999,original:2499,emoji:"🥼",badge:"sale",colors:["#fff","#000","#1a1a2e","#2d5a27"],rating:4.6,reviews:92,isNew:false,isBest:false},
+  {id:5,name:"Varsity Jacket",cat:"Jackets",price:6999,original:8999,emoji:"🧣",badge:"new",colors:["#000","#8b1a1a"],rating:4.9,reviews:67,isNew:true,isBest:true},
+  {id:6,name:"Crewneck Sweatshirt",cat:"Sweatshirts",price:2999,original:null,emoji:"🎽",badge:"new",colors:["#b5a697","#4a4a4a","#1a1a2e"],rating:4.7,reviews:113,isNew:true,isBest:false},
+  {id:7,name:"Elite Tracksuit",cat:"Tracksuits",price:7499,original:9999,emoji:"🏃",badge:"hot",colors:["#000","#1a1a2e","#4a4a4a"],rating:4.8,reviews:89,isNew:false,isBest:true},
+  {id:8,name:"Signature Logo Cap",cat:"Accessories",price:1299,original:null,emoji:"🧢",badge:"new",colors:["#000","#fff","#c9a84c"],rating:4.5,reviews:204,isNew:true,isBest:false},
+];
+
+let cartCount = 3;
+let wishlistItems = new Set([2,5]);
+
+function renderProducts(containerId, products){
+  const el = document.getElementById(containerId);
+  if(!el)return;
+  el.innerHTML = products.map(p=>`
+    <div class="product-card" onclick="openProduct(${p.id})">
+      <div class="product-img-wrap">
+        <div class="product-img-placeholder">${p.emoji}</div>
+        ${p.badge?`<div class="product-badge badge-${p.badge}">${p.badge==='new'?'NEW':p.badge==='sale'?'SALE':'HOT'}</div>`:''}
+        <button class="product-wishlist ${wishlistItems.has(p.id)?'active':''}" onclick="event.stopPropagation();toggleWish(${p.id},this)"><i class="ti ti-heart${wishlistItems.has(p.id)?'-filled':''}"></i></button>
+      </div>
+      <div class="product-info">
+        <div class="product-cat">${p.cat}</div>
+        <div class="product-name">${p.name}</div>
+        <div class="product-colors">${p.colors.map(c=>`<div class="color-dot" style="background:${c};${c==='#fff'?'border-color:#ddd':''}"></div>`).join('')}</div>
+        <div class="product-price">
+          <span class="price-current">₨${p.price.toLocaleString()}</span>
+          ${p.original?`<span class="price-original">₨${p.original.toLocaleString()}</span><span class="price-discount">-${Math.round((1-p.price/p.original)*100)}%</span>`:''}
+        </div>
+        <div class="product-stars">
+          ${'★'.repeat(Math.floor(p.rating))}${'☆'.repeat(5-Math.floor(p.rating))}
+          <span class="star-count">(${p.reviews})</span>
+        </div>
+      </div>
+      <button class="quick-add" onclick="event.stopPropagation();quickAdd(${p.id})">Add to Cart</button>
+    </div>
+  `).join('');
+}
+
+function openProduct(id){
+  const p = PRODUCTS.find(x=>x.id===id);
+  if(!p)return;
+  document.getElementById('pdName').textContent=p.name;
+  document.getElementById('pdPrice').textContent=`₨${p.price.toLocaleString()}`;
+  document.getElementById('pdMainImg').textContent=p.emoji;
+  showPage('product');
+  renderProducts('relatedGrid',PRODUCTS.filter(x=>x.id!==id).slice(0,4));
+}
+
+function quickAdd(id){
+  cartCount++;
+  document.getElementById('cartBadge').textContent=cartCount;
+  showToast('Added to cart! 🛒','success');
+}
+
+function addToCartFromPD(){
+  cartCount++;
+  document.getElementById('cartBadge').textContent=cartCount;
+  showToast('Added to cart! 🛒','success');
+}
+
+function toggleWish(id,btn){
+  if(wishlistItems.has(id)){wishlistItems.delete(id);btn.classList.remove('active');btn.innerHTML='<i class="ti ti-heart"></i>'}
+  else{wishlistItems.add(id);btn.classList.add('active');btn.innerHTML='<i class="ti ti-heart-filled"></i>';showToast('Added to wishlist ❤️')}
+  renderWishlist();
+}
+
+function toggleWishFromPD(btn){
+  btn.classList.toggle('active');
+  showToast(btn.classList.contains('active')?'Added to wishlist ❤️':'Removed from wishlist');
+}
+
+function renderWishlist(){
+  const items = PRODUCTS.filter(p=>wishlistItems.has(p.id));
+  renderProducts('wishlistGrid',items.length?items:PRODUCTS.slice(0,2));
+}
+
+let currentPage = 'home';
+function showPage(page){
+  document.querySelectorAll('.page').forEach(p=>p.style.display='none');
+  document.getElementById('mainFooter').style.display=(page==='admin')?'none':'block';
+  const el = document.getElementById('page-'+page);
+  if(el) el.style.display='block';
+  currentPage = page;
+  document.querySelectorAll('[id^="nl-"]').forEach(a=>a.classList.remove('active'));
+  const link = document.getElementById('nl-'+page);
+  if(link) link.classList.add('active');
+  document.querySelectorAll('[id^="nb-"]').forEach(b=>b.classList.remove('active'));
+  const nb = document.getElementById('nb-'+page);
+  if(nb) nb.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(page==='shop') renderProducts('shopGrid',PRODUCTS);
+  if(page==='wishlist') renderWishlist();
+}
+
+function toggleDark(){
+  document.body.classList.toggle('dark');
+  document.getElementById('darkIcon').className=document.body.classList.contains('dark')?'ti ti-sun':'ti ti-moon';
+}
+
+function showToast(msg,type=''){
+  const t=document.getElementById('mainToast');
+  t.textContent=msg;
+  t.className='toast show'+(type?' '+type:'');
+  setTimeout(()=>t.classList.remove('show'),2800);
+}
+
+function copyCoupon(){
+  showToast('Coupon SUMMER40 copied! 🎉','success');
+}
+
+function applyCoupon(){
+  const v=document.getElementById('couponInput').value.toUpperCase();
+  if(v==='SUMMER40'||v==='RAHBAR10'){
+    document.getElementById('discountRow').style.display='flex';
+    document.getElementById('cartTotal').textContent='₨9,016';
+    showToast('Coupon applied! 10% discount added ✅','success');
+  } else {
+    showToast('Invalid coupon code ❌');
+  }
+}
+
+function selectPayment(el){
+  document.querySelectorAll('.payment-option').forEach(o=>o.classList.remove('selected'));
+  el.classList.add('selected');
+  el.querySelector('input').checked=true;
+}
+
+function placeOrder(){
+  showToast('Order placed successfully! 🎉 Check WhatsApp for confirmation','success');
+  setTimeout(()=>showPage('dashboard'),1500);
+}
+
+function changeQty(delta){
+  const el=document.getElementById('pdQty');
+  let v=parseInt(el.value)+delta;
+  if(v<1)v=1;if(v>10)v=10;
+  el.value=v;
+}
+
+function cartQty(btn,delta){
+  const input=btn.parentElement.querySelector('input');
+  let v=parseInt(input.value)+delta;
+  if(v<1)v=1;
+  input.value=v;
+  updateCartTotal();
+}
+
+function updateCartTotal(){}
+
+function removeCartItem(btn){
+  btn.closest('.cart-item').remove();
+  cartCount=Math.max(0,cartCount-1);
+  document.getElementById('cartBadge').textContent=cartCount;
+  showToast('Item removed from cart');
+}
+
+function selectPDColor(btn,name){
+  document.querySelectorAll('.pd-color-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('selectedColor').textContent=name;
+}
+
+function selectPDSize(btn){
+  if(btn.classList.contains('sold-out'))return;
+  document.querySelectorAll('.pd-size-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('selectedSize').textContent=btn.textContent;
+}
+
+function switchTab(btn,tab){
+  document.querySelectorAll('.pd-tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  ['desc','shipping','reviews','sizeguide'].forEach(t=>{
+    const el=document.getElementById('tab'+t.charAt(0).toUpperCase()+t.slice(1));
+    if(el)el.style.display=(t===tab)?'block':'none';
+  });
+}
+
+function selectThumb(thumb,emoji){
+  document.querySelectorAll('.pd-thumb').forEach(t=>t.classList.remove('active'));
+  thumb.classList.add('active');
+  document.getElementById('pdMainImg').textContent=emoji;
+}
+
+function openSizeGuide(){document.getElementById('sizeModal').classList.add('open')}
+function closeSizeGuide(){document.getElementById('sizeModal').classList.remove('open')}
+
+function toggleSizeChip(el){el.classList.toggle('active')}
+function toggleSwatch(el){document.querySelectorAll('.color-swatch').forEach(s=>s.classList.remove('active'));el.classList.add('active')}
+function clearFilters(){document.querySelectorAll('.filter-item input').forEach(i=>i.checked=false);document.querySelectorAll('.size-chip').forEach(c=>c.classList.remove('active'));showToast('Filters cleared')}
+function updatePriceLabel(v){document.getElementById('priceLabel').textContent='Up to ₨'+parseInt(v).toLocaleString()}
+function applyFilters(){showToast('Filters applied')}
+function sortProducts(v){showToast('Sorted: '+v);renderProducts('shopGrid',PRODUCTS)}
+function setGrid(btn,cols){document.querySelectorAll('.view-toggle').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const g=document.getElementById('shopGrid');g.style.gridTemplateColumns=`repeat(${cols},1fr)`}
+function handleSearch(v){if(v.length>1)document.getElementById('shopCount').textContent=`Showing results for "${v}"`}
+function focusSearch(){document.querySelector('.search-bar input').focus()}
+function toggleMobileMenu(){showToast('Menu toggle — add drawer for full implementation')}
+
+function switchDashTab(tab){
+  const content={
+    orders:'<div class="dash-stats-row"><div class="dash-stat"><div class="dash-stat-num">12</div><div class="dash-stat-label">Total Orders</div></div><div class="dash-stat"><div class="dash-stat-num">₨47K</div><div class="dash-stat-label">Total Spent</div></div><div class="dash-stat"><div class="dash-stat-num">3</div><div class="dash-stat-label">Pending</div></div></div><h2 style="font-family:var(--font-serif);font-size:1.3rem;margin-bottom:1rem">Order History</h2><p style="font-size:0.9rem;color:var(--gray-500)">All your past orders are listed here. Click "Track" to see live status.</p>',
+    wishlist:'<h2 style="font-family:var(--font-serif);font-size:1.3rem;margin-bottom:1rem">My Wishlist</h2><p style="font-size:0.9rem;color:var(--gray-500);margin-bottom:1.5rem">8 items saved</p><div class="products-grid" id="dashWishGrid"></div>',
+    addresses:'<h2 style="font-family:var(--font-serif);font-size:1.3rem;margin-bottom:1rem">Saved Addresses</h2><div style="border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:1rem"><div style="font-weight:600;margin-bottom:0.25rem">Home Address <span style="font-size:0.72rem;background:var(--gray-100);padding:0.2rem 0.5rem;border-radius:20px">Default</span></div><div style="font-size:0.85rem;color:var(--gray-500)">Block 5, Clifton<br>Karachi, Sindh 75600</div></div><button onclick="showToast(\'Address form coming soon\')" style="background:none;border:1.5px dashed var(--gray-300);border-radius:var(--radius-lg);padding:1rem;width:100%;cursor:pointer;font-size:0.85rem;color:var(--gray-500)">+ Add New Address</button>',
+    profile:'<h2 style="font-family:var(--font-serif);font-size:1.3rem;margin-bottom:1.5rem">Profile Settings</h2><div class="form-row"><div class="form-group"><label class="form-label">First Name</label><input class="form-input" value="Muhammad"></div><div class="form-group"><label class="form-label">Last Name</label><input class="form-input" value="Ahmed"></div></div><div class="form-group"><label class="form-label">Email</label><input class="form-input" value="ahmed@email.com"></div><div class="form-group"><label class="form-label">Phone</label><input class="form-input" value="+92 300 1234567"></div><button class="btn-primary" style="background:var(--black);color:#fff" onclick="showToast(\'Profile saved! ✅\',\'success\')">Save Changes</button>',
+    password:'<h2 style="font-family:var(--font-serif);font-size:1.3rem;margin-bottom:1.5rem">Change Password</h2><div class="form-group"><label class="form-label">Current Password</label><input class="form-input" type="password" placeholder="••••••••"></div><div class="form-group"><label class="form-label">New Password</label><input class="form-input" type="password" placeholder="Min. 8 characters"></div><div class="form-group"><label class="form-label">Confirm New Password</label><input class="form-input" type="password" placeholder="••••••••"></div><button class="btn-primary" style="background:var(--black);color:#fff" onclick="showToast(\'Password updated! ✅\',\'success\')">Update Password</button>'
+  };
+  document.getElementById('dashMain').innerHTML=content[tab]||content.orders;
+  document.querySelectorAll('.dash-nav-item').forEach(i=>i.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  if(tab==='wishlist'){const w=document.getElementById('dashWishGrid');if(w)renderProducts('dashWishGrid',PRODUCTS.slice(0,4))}
+}
+
+function switchAdminTab(btn,tab){
+  document.querySelectorAll('.admin-nav-item').forEach(i=>i.classList.remove('active'));
+  btn.classList.add('active');
+  const templates={
+    products:`<div class="admin-top"><h1>Product Management</h1><button class="admin-btn"><i class="ti ti-plus"></i> Add Product</button></div><table class="admin-table"><thead><tr><th>Product</th><th>Category</th><th>Price</th><th>Stock</th><th>Status</th><th>Actions</th></tr></thead><tbody>${PRODUCTS.map(p=>`<tr><td>${p.emoji} ${p.name}</td><td>${p.cat}</td><td>₨${p.price.toLocaleString()}</td><td>24</td><td><span class="admin-badge admin-badge-green">Active</span></td><td><button class="admin-btn" style="padding:0.3rem 0.6rem;font-size:0.72rem">Edit</button></td></tr>`).join('')}</tbody></table>`,
+    orders:`<div class="admin-top"><h1>Order Management</h1><select class="sort-select" style="background:#1a1815;color:#ccc;border-color:#333"><option>All Orders</option><option>Processing</option><option>Shipped</option><option>Delivered</option></select></div><table class="admin-table"><thead><tr><th>Order ID</th><th>Customer</th><th>City</th><th>Amount</th><th>Payment</th><th>Status</th></tr></thead><tbody><tr><td style="color:var(--gold)">#RHB-2485</td><td>Bilal Ahmed</td><td>Karachi</td><td>₨4,998</td><td>COD</td><td><span class="admin-badge admin-badge-yellow">Processing</span></td></tr><tr><td style="color:var(--gold)">#RHB-2484</td><td>Fatima Khan</td><td>Lahore</td><td>₨7,499</td><td>Easypaisa</td><td><span class="admin-badge admin-badge-green">Delivered</span></td></tr><tr><td style="color:var(--gold)">#RHB-2483</td><td>Hassan Ali</td><td>Islamabad</td><td>₨2,499</td><td>JazzCash</td><td><span class="admin-badge admin-badge-yellow">Shipped</span></td></tr></tbody></table>`,
+    customers:`<div class="admin-top"><h1>Customer Management</h1></div><table class="admin-table"><thead><tr><th>Customer</th><th>City</th><th>Orders</th><th>Total Spent</th><th>Joined</th></tr></thead><tbody><tr><td>Ahmed Khan</td><td>Karachi</td><td>8</td><td>₨34,200</td><td>Mar 2024</td></tr><tr><td>Sara Aslam</td><td>Lahore</td><td>5</td><td>₨18,500</td><td>May 2024</td></tr><tr><td>Zain Malik</td><td>Islamabad</td><td>12</td><td>₨48,000</td><td>Jan 2024</td></tr></tbody></table>`,
+    coupons:`<div class="admin-top"><h1>Discount Coupons</h1><button class="admin-btn"><i class="ti ti-plus"></i> Create Coupon</button></div><table class="admin-table"><thead><tr><th>Code</th><th>Type</th><th>Value</th><th>Used</th><th>Expires</th><th>Status</th></tr></thead><tbody><tr><td style="color:var(--gold)">RAHBAR10</td><td>Percentage</td><td>10%</td><td>284</td><td>31 Dec 2025</td><td><span class="admin-badge admin-badge-green">Active</span></td></tr><tr><td style="color:var(--gold)">SUMMER40</td><td>Percentage</td><td>40%</td><td>56</td><td>31 Mar 2025</td><td><span class="admin-badge admin-badge-yellow">Expiring</span></td></tr><tr><td style="color:var(--gold)">FREESHIP</td><td>Shipping</td><td>Free</td><td>120</td><td>30 Jun 2025</td><td><span class="admin-badge admin-badge-green">Active</span></td></tr></tbody></table>`,
+    analytics:`<div class="admin-top"><h1>Sales Analytics</h1></div><div class="admin-stats"><div class="admin-stat"><div class="admin-stat-label">This Month</div><div class="admin-stat-value">₨2.4M</div><div class="admin-stat-change">↑ +24% vs last month</div></div><div class="admin-stat"><div class="admin-stat-label">This Week</div><div class="admin-stat-value">₨620K</div><div class="admin-stat-change">↑ +18%</div></div><div class="admin-stat"><div class="admin-stat-label">Avg Order Value</div><div class="admin-stat-value">₨5,840</div><div class="admin-stat-change">↑ +6%</div></div><div class="admin-stat"><div class="admin-stat-label">Conversion Rate</div><div class="admin-stat-value">3.8%</div><div class="admin-stat-change">↑ +0.4%</div></div></div><div class="admin-section-title" style="margin-top:1.5rem">Top Selling Products</div><table class="admin-table"><thead><tr><th>Product</th><th>Units Sold</th><th>Revenue</th></tr></thead><tbody>${PRODUCTS.sort((a,b)=>b.reviews-a.reviews).slice(0,5).map(p=>`<tr><td>${p.emoji} ${p.name}</td><td>${p.reviews*2}</td><td>₨${(p.price*p.reviews/100).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g,",")} </td></tr>`).join('')}</tbody></table>`
+  };
+  const m=document.getElementById('adminMain');
+  if(templates[tab])m.innerHTML=templates[tab];
+}
+
+function toggleFaq(el){
+  const ans=el.nextElementSibling;
+  const icon=el.querySelector('i');
+  ans.classList.toggle('open');
+  icon.className=ans.classList.contains('open')?'ti ti-minus':'ti ti-plus';
+}
+
+// Countdown timer
+function startCountdown(){
+  let secs=parseInt(document.getElementById('cd-s').textContent)||30;
+  let mins=parseInt(document.getElementById('cd-m').textContent)||45;
+  let hrs=parseInt(document.getElementById('cd-h').textContent)||8;
+  setInterval(()=>{
+    if(secs>0){secs--}else{secs=59;if(mins>0){mins--}else{mins=59;hrs=Math.max(0,hrs-1)}}
+    const s=document.getElementById('cd-s');const m=document.getElementById('cd-m');const h=document.getElementById('cd-h');
+    if(s)s.textContent=String(secs).padStart(2,'0');
+    if(m)m.textContent=String(mins).padStart(2,'0');
+    if(h)h.textContent=String(hrs).padStart(2,'0');
+  },1000);
+}
+
+// Init
+renderProducts('newArrivalsGrid',PRODUCTS.filter(p=>p.isNew));
+renderProducts('bestSellersGrid',PRODUCTS.filter(p=>p.isBest));
+renderProducts('shopGrid',PRODUCTS);
+startCountdown();
+
+// Close modal on bg click
+document.getElementById('sizeModal').addEventListener('click',function(e){if(e.target===this)closeSizeGuide()});
+</script>
+</body>
+</html>
